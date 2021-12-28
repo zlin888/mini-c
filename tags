@@ -1,0 +1,1383 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+AND	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+AND	src/java/lexer/Token.java	/^        AND,     \/\/ '&'$/;"	e	enum:Token.TokenClass	file:
+ASSIGN	src/java/lexer/Token.java	/^        ASSIGN, \/\/ '='$/;"	e	enum:Token.TokenClass	file:
+AST	automark.py	/^    AST = "ast"$/;"	v	class:MODE
+AST	src/java/Main.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:Main.Mode	file:
+AST	src/java/MainPart2.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:MainPart2.Mode	file:
+ASTERIX	src/java/lexer/Token.java	/^        ASTERIX, \/\/ '*'  \/\/ can be used for multiplication or pointers$/;"	e	enum:Token.TokenClass	file:
+ASTNode	src/java/ast/ASTNode.java	/^public interface ASTNode {$/;"	i
+ASTPrinter	src/java/ast/ASTPrinter.java	/^    public ASTPrinter(PrintWriter writer) {$/;"	m	class:ASTPrinter
+ASTPrinter	src/java/ast/ASTPrinter.java	/^public class ASTPrinter implements ASTVisitor<Void> {$/;"	c
+ASTVisitor	src/java/ast/ASTVisitor.java	/^public interface ASTVisitor<T> {$/;"	i
+AddrGen	src/java/gen/AddrGen.java	/^    public AddrGen(AssemblyProgram asmProg) {$/;"	m	class:AddrGen
+AddrGen	src/java/gen/AddrGen.java	/^public class AddrGen implements ASTVisitor<Register> {$/;"	c
+AddressOfExpr	src/java/ast/AddressOfExpr.java	/^    public AddressOfExpr(Expr expr) {$/;"	m	class:AddressOfExpr
+AddressOfExpr	src/java/ast/AddressOfExpr.java	/^public class AddressOfExpr extends Expr {$/;"	c
+AllocationLocationVisitor	src/java/gen/AllocationLocationVisitor.java	/^public class AllocationLocationVisitor implements ASTVisitor<Void> {$/;"	c
+Arch	src/java/gen/asm/Register.java	/^        private Arch(int num, String name) {$/;"	m	class:Register.Arch	file:
+Arch	src/java/gen/asm/Register.java	/^    static public class Arch extends Register {$/;"	c	class:Register
+ArrayAccessExpr	src/java/ast/ArrayAccessExpr.java	/^    public ArrayAccessExpr(Expr array, Expr idx) {$/;"	m	class:ArrayAccessExpr
+ArrayAccessExpr	src/java/ast/ArrayAccessExpr.java	/^public class ArrayAccessExpr extends Expr {$/;"	c
+ArrayType	src/java/ast/ArrayType.java	/^    public ArrayType(Type elementType, int n) {$/;"	m	class:ArrayType
+ArrayType	src/java/ast/ArrayType.java	/^public class ArrayType implements Type {$/;"	c
+ArrayTypeTest	tests/ast/ArrayTypeTest.java	/^class ArrayTypeTest {$/;"	c
+AssemblyItem	src/java/gen/asm/AssemblyItem.java	/^public abstract class AssemblyItem {$/;"	c
+AssemblyItemVisitor	src/java/gen/asm/AssemblyItemVisitor.java	/^public interface AssemblyItemVisitor<T> {$/;"	i
+AssemblyProgram	src/java/gen/asm/AssemblyProgram.java	/^    public AssemblyProgram() {$/;"	m	class:AssemblyProgram
+AssemblyProgram	src/java/gen/asm/AssemblyProgram.java	/^public class AssemblyProgram {$/;"	c
+Assign	src/java/ast/Assign.java	/^    public Assign(Expr left, Expr right) {$/;"	m	class:Assign
+Assign	src/java/ast/Assign.java	/^public class Assign extends Stmt {$/;"	c
+Author	tests/all-syntax.c	/^struct Author {$/;"	s	file:
+Author	tests/simple-for-gen.c	/^struct Author {$/;"	s	file:
+BUILD_FLAG	automark.py	/^BUILD_FLAG = not args.not_compile$/;"	v
+BaseCFGNodeVisitor	src/java/gen/BaseCFGNodeVisitor.java	/^abstract class BaseCFGNodeVisitor<T> {$/;"	c
+BaseInfGraphVisitor	src/java/gen/InterferenceGraph.java	/^    abstract private class BaseInfGraphVisitor<T> {$/;"	c	class:InterferenceGraph
+BaseSemanticVisitor	src/java/sem/BaseSemanticVisitor.java	/^	public BaseSemanticVisitor() {$/;"	m	class:BaseSemanticVisitor
+BaseSemanticVisitor	src/java/sem/BaseSemanticVisitor.java	/^public abstract class BaseSemanticVisitor<T> implements SemanticVisitor<T> {$/;"	c
+BaseType	src/java/ast/BaseType.java	/^public enum BaseType implements Type {$/;"	g
+BinOp	src/java/ast/BinOp.java	/^    public BinOp(Expr left, Op op, Expr right) {$/;"	m	class:BinOp
+BinOp	src/java/ast/BinOp.java	/^public class BinOp extends Expr {$/;"	c
+Block	src/java/ast/Block.java	/^    public Block(Block block) {$/;"	m	class:Block
+Block	src/java/ast/Block.java	/^    public Block(List<VarDecl> varDecls, List<Stmt> stmts) {$/;"	m	class:Block
+Block	src/java/ast/Block.java	/^public class Block extends Stmt {$/;"	c
+Book	tests/all-syntax.c	/^struct Book {$/;"	s	file:
+Book	tests/return_struct.c	/^struct Book {$/;"	s	file:
+Book	tests/same-fields-struct.c	/^struct Book {$/;"	s	file:
+Book	tests/struct-gen.c	/^struct Book {$/;"	s	file:
+Books	tests/structs.c	/^struct Books {$/;"	s	file:
+Branch	src/java/gen/asm/AssemblyItem.java	/^            public Branch(String opcode, Register src1, Register src2, Label label) {$/;"	m	class:AssemblyItem.Instruction.Branch
+Branch	src/java/gen/asm/AssemblyItem.java	/^        public static class Branch extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+Build	automark.py	/^class Build():$/;"	c
+BuiltinFunSymbols	src/java/sem/BuiltinFunSymbols.java	/^public class BuiltinFunSymbols {$/;"	c
+CFGDotPrinter	src/java/gen/CFGDotPrinter.java	/^    public CFGDotPrinter() {$/;"	m	class:CFGDotPrinter
+CFGDotPrinter	src/java/gen/CFGDotPrinter.java	/^    public CFGDotPrinter(String path) {$/;"	m	class:CFGDotPrinter
+CFGDotPrinter	src/java/gen/CFGDotPrinter.java	/^public class CFGDotPrinter extends BaseCFGNodeVisitor<Void> {$/;"	c
+CFGNames	src/java/gen/LivenessAnalyzer.java	/^    private LinkedList<String> CFGNames = new LinkedList<>();$/;"	f	class:LivenessAnalyzer	file:
+CFGNode	src/java/gen/CFGNode.java	/^    public CFGNode(AssemblyItem.Instruction instruction) {$/;"	m	class:CFGNode
+CFGNode	src/java/gen/CFGNode.java	/^    public CFGNode(Boolean entryNode) {$/;"	m	class:CFGNode
+CFGNode	src/java/gen/CFGNode.java	/^public class CFGNode {$/;"	c
+CFGNodes	src/java/gen/LivenessAnalyzer.java	/^    private LinkedList<CFGNode> CFGNodes = new LinkedList<>();$/;"	f	class:LivenessAnalyzer	file:
+CHAR	src/java/ast/BaseType.java	/^    INT, CHAR, VOID;$/;"	e	enum:BaseType	file:
+CHAR	src/java/lexer/Token.java	/^        CHAR, \/\/ "char"$/;"	e	enum:Token.TokenClass	file:
+CHAR_LITERAL	src/java/lexer/Token.java	/^        CHAR_LITERAL,   \/\/ \\'('a'|...|'z'|'A'|...|'Z'|'\\t'|'\\b'|'\\n'|'\\r'|'\\f'|'\\''|'\\"'|'\\\\'|'\\0'|'.'|','|'_'|...)\\'  a character starts and end with a single quote '$/;"	e	enum:Token.TokenClass	file:
+COMMA	src/java/lexer/Token.java	/^        COMMA, \/\/ ','$/;"	e	enum:Token.TokenClass	file:
+ChrLiteral	src/java/ast/ChrLiteral.java	/^    public ChrLiteral(String sc) {$/;"	m	class:ChrLiteral
+ChrLiteral	src/java/ast/ChrLiteral.java	/^    public ChrLiteral(char c) {$/;"	m	class:ChrLiteral
+ChrLiteral	src/java/ast/ChrLiteral.java	/^public class ChrLiteral extends Expr{$/;"	c
+CodeGenerator	src/java/gen/CodeGenerator.java	/^public class CodeGenerator {$/;"	c
+Comment	src/java/gen/asm/AssemblyItem.java	/^        Comment(String comment) {$/;"	m	class:AssemblyItem.Comment
+Comment	src/java/gen/asm/AssemblyItem.java	/^    public static class Comment extends AssemblyItem {$/;"	c	class:AssemblyItem
+DATA	src/java/gen/asm/AssemblyProgram.java	/^        public enum Type {TEXT, DATA}$/;"	e	enum:AssemblyProgram.Section.Type	file:
+DIV	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+DIV	src/java/lexer/Token.java	/^        DIV,     \/\/ '\/'$/;"	e	enum:Token.TokenClass	file:
+DOT	src/java/lexer/Token.java	/^        DOT, \/\/ '.'$/;"	e	enum:Token.TokenClass	file:
+Directive	src/java/gen/asm/AssemblyItem.java	/^        private Directive(String name) {$/;"	m	class:AssemblyItem.Directive	file:
+Directive	src/java/gen/asm/AssemblyItem.java	/^    public static class Directive extends AssemblyItem {$/;"	c	class:AssemblyItem
+DotArrow	src/java/gen/CFGDotPrinter.java	/^        public DotArrow(DotText left, DotText right) {$/;"	m	class:CFGDotPrinter.DotArrow
+DotArrow	src/java/gen/CFGDotPrinter.java	/^    private class DotArrow extends DotNode {$/;"	c	class:CFGDotPrinter
+DotGraph	src/java/gen/CFGDotPrinter.java	/^        public DotGraph() {$/;"	m	class:CFGDotPrinter.DotGraph
+DotGraph	src/java/gen/CFGDotPrinter.java	/^        public DotGraph(List<DotNode> children) {$/;"	m	class:CFGDotPrinter.DotGraph
+DotGraph	src/java/gen/CFGDotPrinter.java	/^    private class DotGraph extends DotNode {$/;"	c	class:CFGDotPrinter
+DotNode	src/java/gen/CFGDotPrinter.java	/^    static abstract class DotNode {$/;"	c	class:CFGDotPrinter
+DotText	src/java/gen/CFGDotPrinter.java	/^        public DotText(String content) {$/;"	m	class:CFGDotPrinter.DotText
+DotText	src/java/gen/CFGDotPrinter.java	/^    private class DotText extends DotNode {$/;"	c	class:CFGDotPrinter
+ELSE	src/java/lexer/Token.java	/^        ELSE,   \/\/ "else"$/;"	e	enum:Token.TokenClass	file:
+EOF	src/java/lexer/Token.java	/^        EOF,    \/\/ signal end of file$/;"	e	enum:Token.TokenClass	file:
+EQ	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+EQ	src/java/lexer/Token.java	/^        EQ, \/\/ "=="$/;"	e	enum:Token.TokenClass	file:
+Expr	src/java/ast/Expr.java	/^public abstract class Expr implements ASTNode {$/;"	c
+ExprGen	src/java/gen/ExprGen.java	/^    public ExprGen(AssemblyProgram asmProg) {$/;"	m	class:ExprGen
+ExprGen	src/java/gen/ExprGen.java	/^public class ExprGen implements ASTVisitor<Register> {$/;"	c
+ExprStmt	src/java/ast/ExprStmt.java	/^    public ExprStmt(Expr expr) {$/;"	m	class:ExprStmt
+ExprStmt	src/java/ast/ExprStmt.java	/^public class ExprStmt extends Stmt {$/;"	c
+FAIL	automark.py	/^    FAIL = "FAIL"$/;"	v	class:STATUS
+FILE_NOT_FOUND	src/java/Main.java	/^	private static final int FILE_NOT_FOUND = 2;$/;"	f	class:Main	file:
+FILE_NOT_FOUND	src/java/MainPart2.java	/^	private static final int FILE_NOT_FOUND = 2;$/;"	f	class:MainPart2	file:
+FieldAccessExpr	src/java/ast/FieldAccessExpr.java	/^    public FieldAccessExpr(Expr structure, String fieldName) {$/;"	m	class:FieldAccessExpr
+FieldAccessExpr	src/java/ast/FieldAccessExpr.java	/^public class FieldAccessExpr extends Expr{$/;"	c
+FunCallExpr	src/java/ast/FunCallExpr.java	/^    public FunCallExpr(String funcName, List<Expr> args) {$/;"	m	class:FunCallExpr
+FunCallExpr	src/java/ast/FunCallExpr.java	/^public class FunCallExpr extends Expr {$/;"	c
+FunDecl	src/java/ast/FunDecl.java	/^    public FunDecl(Type type, String name, List<VarDecl> params, Block block) {$/;"	m	class:FunDecl
+FunDecl	src/java/ast/FunDecl.java	/^public class FunDecl implements ASTNode {$/;"	c
+FunGen	src/java/gen/FunGen.java	/^    public FunGen(AssemblyProgram asmProg) {$/;"	m	class:FunGen
+FunGen	src/java/gen/FunGen.java	/^public class FunGen implements ASTVisitor<Void> {$/;"	c
+FunSymbol	src/java/sem/FunSymbol.java	/^    public FunSymbol(FunDecl funDecl) {$/;"	m	class:FunSymbol
+FunSymbol	src/java/sem/FunSymbol.java	/^public class FunSymbol extends Symbol {$/;"	c
+GE	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+GE	src/java/lexer/Token.java	/^        GE, \/\/ ">="$/;"	e	enum:Token.TokenClass	file:
+GEN	automark.py	/^    GEN = "gen"$/;"	v	class:MODE
+GEN	src/java/Main.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:Main.Mode	file:
+GEN	src/java/MainPart2.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:MainPart2.Mode	file:
+GT	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+GT	src/java/lexer/Token.java	/^        GT, \/\/ '>'$/;"	e	enum:Token.TokenClass	file:
+IDENTIFIER	src/java/lexer/Token.java	/^        IDENTIFIER, \/\/ ('a'|...|'z'|'A'|...|'Z'|'_')('0'|...|'9'|'a'|...|'z'|'A'|...|'Z'|'_')*$/;"	e	enum:Token.TokenClass	file:
+IF	src/java/lexer/Token.java	/^        IF,     \/\/ "if"$/;"	e	enum:Token.TokenClass	file:
+IInstruction	src/java/gen/asm/AssemblyItem.java	/^            public IInstruction(String opcode, Register dst, Register src, int imm) {$/;"	m	class:AssemblyItem.Instruction.IInstruction
+IInstruction	src/java/gen/asm/AssemblyItem.java	/^        public static class IInstruction extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+INCLUDE	src/java/lexer/Token.java	/^        INCLUDE, \/\/ "#include"$/;"	e	enum:Token.TokenClass	file:
+INT	src/java/ast/BaseType.java	/^    INT, CHAR, VOID;$/;"	e	enum:BaseType	file:
+INT	src/java/lexer/Token.java	/^        INT,  \/\/ "int"$/;"	e	enum:Token.TokenClass	file:
+INT_LITERAL	src/java/lexer/Token.java	/^        INT_LITERAL,    \/\/ ('0'|...|'9')+$/;"	e	enum:Token.TokenClass	file:
+INVALID	src/java/lexer/Token.java	/^        INVALID \/\/ in case we cannot recognise a character as part of a valid token$/;"	e	enum:Token.TokenClass	file:
+If	src/java/ast/If.java	/^    public If(Expr condition, Stmt ifBranch) {$/;"	m	class:If
+If	src/java/ast/If.java	/^    public If(Expr condition, Stmt ifBranch, Stmt elseBranch) {$/;"	m	class:If
+If	src/java/ast/If.java	/^public class If extends Stmt {$/;"	c
+Instruction	src/java/gen/asm/AssemblyItem.java	/^        public Instruction(String opcode) {$/;"	m	class:AssemblyItem.Instruction
+Instruction	src/java/gen/asm/AssemblyItem.java	/^    public abstract static class Instruction extends AssemblyItem {$/;"	c	class:AssemblyItem
+IntLiteral	src/java/ast/IntLiteral.java	/^    public IntLiteral(String sInt) {$/;"	m	class:IntLiteral
+IntLiteral	src/java/ast/IntLiteral.java	/^    public IntLiteral(int i) {$/;"	m	class:IntLiteral
+IntLiteral	src/java/ast/IntLiteral.java	/^public class IntLiteral extends Expr {$/;"	c
+InterferenceGraph	src/java/gen/InterferenceGraph.java	/^    public InterferenceGraph(CFGNode entry) {$/;"	m	class:InterferenceGraph
+InterferenceGraph	src/java/gen/InterferenceGraph.java	/^public class InterferenceGraph {$/;"	c
+JR	src/java/gen/asm/AssemblyItem.java	/^            public JR() {$/;"	m	class:AssemblyItem.Instruction.JR
+JR	src/java/gen/asm/AssemblyItem.java	/^        public static class JR extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+K	src/java/gen/InterferenceGraph.java	/^    public final static int K = Register.Arch.allocableArchs.length;$/;"	f	class:InterferenceGraph
+LA	src/java/gen/asm/AssemblyItem.java	/^            public LA(Register dst, Label label) {$/;"	m	class:AssemblyItem.Instruction.LA
+LA	src/java/gen/asm/AssemblyItem.java	/^        public static class LA extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+LBRA	src/java/lexer/Token.java	/^        LBRA,  \/\/ '{' \/\/ left brace$/;"	e	enum:Token.TokenClass	file:
+LE	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+LE	src/java/lexer/Token.java	/^        LE, \/\/ "<="$/;"	e	enum:Token.TokenClass	file:
+LEXER	automark.py	/^    LEXER = "lexer"$/;"	v	class:MODE
+LEXER	src/java/Main.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:Main.Mode	file:
+LEXER	src/java/MainPart2.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:MainPart2.Mode	file:
+LEXER_FAIL	src/java/Main.java	/^    private static final int LEXER_FAIL     = 250;$/;"	f	class:Main	file:
+LEXER_FAIL	src/java/MainPart2.java	/^    private static final int LEXER_FAIL     = 250;$/;"	f	class:MainPart2	file:
+LI	src/java/gen/asm/AssemblyItem.java	/^            public LI(Register dst, int imm) {$/;"	m	class:AssemblyItem.Instruction.LI
+LI	src/java/gen/asm/AssemblyItem.java	/^        public static class LI extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+LOGAND	src/java/lexer/Token.java	/^        LOGAND, \/\/ "&&"$/;"	e	enum:Token.TokenClass	file:
+LOGOR	src/java/lexer/Token.java	/^        LOGOR,  \/\/ "||"$/;"	e	enum:Token.TokenClass	file:
+LPAR	src/java/lexer/Token.java	/^        LPAR,  \/\/ '(' \/\/ left parenthesis$/;"	e	enum:Token.TokenClass	file:
+LSBR	src/java/lexer/Token.java	/^        LSBR,  \/\/ '[' \/\/ left square brace$/;"	e	enum:Token.TokenClass	file:
+LT	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+LT	src/java/lexer/Token.java	/^        LT, \/\/ '<'$/;"	e	enum:Token.TokenClass	file:
+LValueVisitor	src/java/sem/LValueVisitor.java	/^public class LValueVisitor extends BaseSemanticVisitor<Void> {$/;"	c
+LW	src/java/gen/asm/AssemblyItem.java	/^            public LW(Register dst, Label label) {$/;"	m	class:AssemblyItem.Instruction.LW
+LW	src/java/gen/asm/AssemblyItem.java	/^        public static class LW extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+Label	src/java/gen/asm/AssemblyItem.java	/^        public Label() {$/;"	m	class:AssemblyItem.Label
+Label	src/java/gen/asm/AssemblyItem.java	/^        public Label(String name) {$/;"	m	class:AssemblyItem.Label
+Label	src/java/gen/asm/AssemblyItem.java	/^    public static class Label extends AssemblyItem {$/;"	c	class:AssemblyItem
+LabelLoad	src/java/gen/asm/AssemblyItem.java	/^            public LabelLoad(String opcode, Register dst, Label label) {$/;"	m	class:AssemblyItem.Instruction.LabelLoad
+LabelLoad	src/java/gen/asm/AssemblyItem.java	/^        public static class LabelLoad extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+LabelStore	src/java/gen/asm/AssemblyItem.java	/^            public LabelStore(String opcode, Register src, Label label) {$/;"	m	class:AssemblyItem.Instruction.LabelStore
+LabelStore	src/java/gen/asm/AssemblyItem.java	/^        public static class LabelStore extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+LivenessAnalyzer	src/java/gen/LivenessAnalyzer.java	/^    public LivenessAnalyzer(AssemblyProgram asmProg) {$/;"	m	class:LivenessAnalyzer
+LivenessAnalyzer	src/java/gen/LivenessAnalyzer.java	/^public class LivenessAnalyzer {$/;"	c
+Load	src/java/gen/asm/AssemblyItem.java	/^            public Load(String opcode, Register op1, Register op2, int imm) {$/;"	m	class:AssemblyItem.Instruction.Load
+Load	src/java/gen/asm/AssemblyItem.java	/^        public static class Load extends MemIndirect {$/;"	c	class:AssemblyItem.Instruction
+MINUS	src/java/lexer/Token.java	/^        MINUS,   \/\/ '-'$/;"	e	enum:Token.TokenClass	file:
+MOD	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+MODE	automark.py	/^class MODE:$/;"	c
+MODE_FAIL	src/java/Main.java	/^    private static final int MODE_FAIL      = 254;$/;"	f	class:Main	file:
+MODE_FAIL	src/java/MainPart2.java	/^    private static final int MODE_FAIL      = 254;$/;"	f	class:MainPart2	file:
+MOVE	src/java/gen/asm/AssemblyItem.java	/^            public MOVE(Register dst, Register src) {$/;"	m	class:AssemblyItem.Instruction.MOVE
+MOVE	src/java/gen/asm/AssemblyItem.java	/^        public static class MOVE extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+MUL	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+Main	src/java/Main.java	/^public class Main {$/;"	c
+MainLabel	src/java/gen/asm/AssemblyItem.java	/^    public static class MainLabel extends Label {$/;"	c	class:AssemblyItem
+MainPart2	src/java/MainPart2.java	/^public class MainPart2 {$/;"	c
+MemIndirect	src/java/gen/asm/AssemblyItem.java	/^            public MemIndirect(String opcode, Register op1, Register op2, int imm) {$/;"	m	class:AssemblyItem.Instruction.MemIndirect
+MemIndirect	src/java/gen/asm/AssemblyItem.java	/^        public abstract static class MemIndirect extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+Mode	src/java/Main.java	/^    private enum Mode {$/;"	g	class:Main
+Mode	src/java/MainPart2.java	/^    private enum Mode {$/;"	g	class:MainPart2
+MoreThanOneLabelNodeFound	src/java/gen/LivenessAnalyzer.java	/^        public MoreThanOneLabelNodeFound() {$/;"	m	class:LivenessAnalyzer.MoreThanOneLabelNodeFound
+MoreThanOneLabelNodeFound	src/java/gen/LivenessAnalyzer.java	/^    private static class MoreThanOneLabelNodeFound extends Error {$/;"	c	class:LivenessAnalyzer
+NE	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+NE	src/java/lexer/Token.java	/^        NE, \/\/ "!="$/;"	e	enum:Token.TokenClass	file:
+NaiveRegAlloc	src/java/regalloc/NaiveRegAlloc.java	/^public class NaiveRegAlloc {$/;"	c
+NameAnalysisVisitor	src/java/sem/NameAnalysisVisitor.java	/^	public NameAnalysisVisitor() {$/;"	m	class:NameAnalysisVisitor
+NameAnalysisVisitor	src/java/sem/NameAnalysisVisitor.java	/^	public NameAnalysisVisitor(Scope outer) {$/;"	m	class:NameAnalysisVisitor
+NameAnalysisVisitor	src/java/sem/NameAnalysisVisitor.java	/^public class NameAnalysisVisitor extends BaseSemanticVisitor<Void> {$/;"	c
+Node	src/java/gen/InterferenceGraph.java	/^        public Node(Register reg) {$/;"	m	class:InterferenceGraph.Node
+Node	src/java/gen/InterferenceGraph.java	/^        public Node(boolean isEntry) {$/;"	m	class:InterferenceGraph.Node
+Node	src/java/gen/InterferenceGraph.java	/^    public class Node {$/;"	c	class:InterferenceGraph
+OR	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+Op	src/java/ast/Op.java	/^public enum Op {$/;"	g
+PARSER	automark.py	/^    PARSER = "parser"$/;"	v	class:MODE
+PARSER	src/java/Main.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:Main.Mode	file:
+PARSER	src/java/MainPart2.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:MainPart2.Mode	file:
+PARSER_FAIL	src/java/Main.java	/^    private static final int PARSER_FAIL    = 245;$/;"	f	class:Main	file:
+PARSER_FAIL	src/java/MainPart2.java	/^    private static final int PARSER_FAIL    = 245;$/;"	f	class:MainPart2	file:
+PASS	automark.py	/^    PASS = "PASS"$/;"	v	class:STATUS
+PASS	src/java/Main.java	/^    private static final int PASS           = 0;$/;"	f	class:Main	file:
+PASS	src/java/MainPart2.java	/^    private static final int PASS           = 0;$/;"	f	class:MainPart2	file:
+PLUS	src/java/lexer/Token.java	/^        PLUS,    \/\/ '+'$/;"	e	enum:Token.TokenClass	file:
+Parser	src/java/parser/Parser.java	/^    public Parser(Tokeniser tokeniser) {$/;"	m	class:Parser
+Parser	src/java/parser/Parser.java	/^public class Parser {$/;"	c
+PointerType	src/java/ast/PointerType.java	/^    public PointerType(Type elementType) {$/;"	m	class:PointerType
+PointerType	src/java/ast/PointerType.java	/^public class PointerType implements Type {$/;"	c
+Position	src/java/util/Position.java	/^    public Position(int line, int column) {$/;"	m	class:Position
+Position	src/java/util/Position.java	/^public class Position {$/;"	c
+Program	src/java/ast/Program.java	/^    public Program(List<StructTypeDecl> structTypeDecls, List<VarDecl> varDecls, List<FunDecl> funDecls) {$/;"	m	class:Program
+Program	src/java/ast/Program.java	/^public class Program implements ASTNode {$/;"	c
+ProgramGen	src/java/gen/ProgramGen.java	/^    public ProgramGen(AssemblyProgram asmProg) {$/;"	m	class:ProgramGen
+ProgramGen	src/java/gen/ProgramGen.java	/^public class ProgramGen implements ASTVisitor<Void> {$/;"	c
+RBRA	src/java/lexer/Token.java	/^        RBRA,  \/\/ '}' \/\/ right brace$/;"	e	enum:Token.TokenClass	file:
+REM	src/java/lexer/Token.java	/^        REM,     \/\/ '%'$/;"	e	enum:Token.TokenClass	file:
+RETURN	src/java/lexer/Token.java	/^        RETURN, \/\/ "return"$/;"	e	enum:Token.TokenClass	file:
+RInstruction	src/java/gen/asm/AssemblyItem.java	/^            public RInstruction(String opcode, Register dst, Register src1, Register src2) {$/;"	m	class:AssemblyItem.Instruction.RInstruction
+RInstruction	src/java/gen/asm/AssemblyItem.java	/^        public static class RInstruction extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+RPAR	src/java/lexer/Token.java	/^        RPAR,  \/\/ ')' \/\/ right parenthesis$/;"	e	enum:Token.TokenClass	file:
+RSBR	src/java/lexer/Token.java	/^        RSBR,  \/\/ ']' \/\/ left square brace$/;"	e	enum:Token.TokenClass	file:
+Register	src/java/gen/asm/Register.java	/^public abstract class Register {$/;"	c
+Return	src/java/ast/Return.java	/^    public Return() {$/;"	m	class:Return
+Return	src/java/ast/Return.java	/^    public Return(Expr expr) {$/;"	m	class:Return
+Return	src/java/ast/Return.java	/^public class Return extends Stmt {$/;"	c
+ReturnStructVisitor	src/java/gen/ReturnStructVisitor.java	/^public class ReturnStructVisitor implements ASTVisitor<Expr> {$/;"	c
+SC	src/java/lexer/Token.java	/^        SC,    \/\/ ';' \/\/ semicolon$/;"	e	enum:Token.TokenClass	file:
+SEM	automark.py	/^    SEM = "sem"$/;"	v	class:MODE
+SEMANTICANALYSIS	src/java/Main.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:Main.Mode	file:
+SEMANTICANALYSIS	src/java/MainPart2.java	/^        LEXER, PARSER, AST, SEMANTICANALYSIS, GEN$/;"	e	enum:MainPart2.Mode	file:
+SEM_FAIL	src/java/Main.java	/^    private static final int SEM_FAIL       = 240;$/;"	f	class:Main	file:
+SEM_FAIL	src/java/MainPart2.java	/^    private static final int SEM_FAIL       = 240;$/;"	f	class:MainPart2	file:
+SIZEOF	src/java/lexer/Token.java	/^        SIZEOF, \/\/ "sizeof"$/;"	e	enum:Token.TokenClass	file:
+STATUS	automark.py	/^class STATUS:$/;"	c
+STRING_LITERAL	src/java/lexer/Token.java	/^        STRING_LITERAL, \/\/ \\".*\\"  any sequence of characters enclosed within two double quote " (please be aware of the escape character backslash \\)$/;"	e	enum:Token.TokenClass	file:
+STRUCT	src/java/lexer/Token.java	/^        STRUCT, \/\/ "struct"$/;"	e	enum:Token.TokenClass	file:
+SUB	src/java/ast/Op.java	/^    ADD, SUB, MUL, DIV, MOD, GT, LT, GE, LE, NE, EQ, OR, AND;$/;"	e	enum:Op	file:
+Scanner	src/java/lexer/Scanner.java	/^    public Scanner(File source) throws FileNotFoundException {$/;"	m	class:Scanner
+Scanner	src/java/lexer/Scanner.java	/^public class Scanner {$/;"	c
+Scope	src/java/sem/Scope.java	/^	public Scope() { this(null); }$/;"	m	class:Scope
+Scope	src/java/sem/Scope.java	/^	public Scope(Scope outer) {$/;"	m	class:Scope
+Scope	src/java/sem/Scope.java	/^	public Scope(Scope outer, Map<String, Symbol> symbolTable) {$/;"	m	class:Scope
+Scope	src/java/sem/Scope.java	/^public class Scope {$/;"	c
+Section	src/java/gen/asm/AssemblyProgram.java	/^        public Section(Type type) {$/;"	m	class:AssemblyProgram.Section
+Section	src/java/gen/asm/AssemblyProgram.java	/^    public static class Section {$/;"	c	class:AssemblyProgram
+SemanticAnalyzer	src/java/sem/SemanticAnalyzer.java	/^public class SemanticAnalyzer {$/;"	c
+SemanticVisitor	src/java/sem/SemanticVisitor.java	/^public interface SemanticVisitor<T> extends ast.ASTVisitor<T> {$/;"	i
+ShouldNotReach	src/java/ast/ASTVisitor.java	/^        public ShouldNotReach() {$/;"	m	class:ASTVisitor.ShouldNotReach
+ShouldNotReach	src/java/ast/ASTVisitor.java	/^    class ShouldNotReach extends Error {$/;"	c	interface:ASTVisitor
+SingleBranchInstruction	src/java/gen/asm/AssemblyItem.java	/^            public SingleBranchInstruction(String opcode, Label label) {$/;"	m	class:AssemblyItem.Instruction.SingleBranchInstruction
+SingleBranchInstruction	src/java/gen/asm/AssemblyItem.java	/^        public static class SingleBranchInstruction extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+SizeHelper	src/java/util/SizeHelper.java	/^public class SizeHelper {$/;"	c
+SizeOfExpr	src/java/ast/SizeOfExpr.java	/^    public SizeOfExpr(Type t) {$/;"	m	class:SizeOfExpr
+SizeOfExpr	src/java/ast/SizeOfExpr.java	/^public class SizeOfExpr extends Expr {$/;"	c
+SmartRegAlloc	src/java/regalloc/SmartRegAlloc.java	/^public class SmartRegAlloc {$/;"	c
+Space	src/java/gen/asm/AssemblyItem.java	/^            public Space(int size) {$/;"	m	class:AssemblyItem.Directive.Space
+Space	src/java/gen/asm/AssemblyItem.java	/^        static public class Space extends Directive {$/;"	c	class:AssemblyItem.Directive
+StaticAllocation	src/java/gen/asm/AssemblyItem.java	/^            public StaticAllocation(VarDecl vd) {$/;"	m	class:AssemblyItem.Directive.StaticAllocation
+StaticAllocation	src/java/gen/asm/AssemblyItem.java	/^        static public class StaticAllocation extends Directive {$/;"	c	class:AssemblyItem.Directive
+Stmt	src/java/ast/Stmt.java	/^public abstract class Stmt implements ASTNode {$/;"	c
+Store	src/java/gen/asm/AssemblyItem.java	/^            public Store(String opcode, Register op1, Register op2, int imm) {$/;"	m	class:AssemblyItem.Instruction.Store
+Store	src/java/gen/asm/AssemblyItem.java	/^        public static class Store extends MemIndirect {$/;"	c	class:AssemblyItem.Instruction
+StrLiteral	src/java/ast/StrLiteral.java	/^    public StrLiteral(String s) {$/;"	m	class:StrLiteral
+StrLiteral	src/java/ast/StrLiteral.java	/^public class StrLiteral extends Expr{$/;"	c
+StringAllocation	src/java/gen/asm/AssemblyItem.java	/^            public StringAllocation(StrLiteral sl) {$/;"	m	class:AssemblyItem.Directive.StringAllocation
+StringAllocation	src/java/gen/asm/AssemblyItem.java	/^        static public class StringAllocation extends Directive {$/;"	c	class:AssemblyItem.Directive
+StructAssignVisitor	src/java/sem/StructAssignVisitor.java	/^public class StructAssignVisitor { \/\/extends BaseSemanticVisitor<List<Stmt>> {$/;"	c
+StructType	src/java/ast/StructType.java	/^    public StructType(String name) {$/;"	m	class:StructType
+StructType	src/java/ast/StructType.java	/^public class StructType implements Type {$/;"	c
+StructTypeDecl	src/java/ast/StructTypeDecl.java	/^    public StructTypeDecl(StructType type, List<VarDecl> varDecls) {$/;"	m	class:StructTypeDecl
+StructTypeDecl	src/java/ast/StructTypeDecl.java	/^public class StructTypeDecl implements ASTNode {$/;"	c
+Symbol	src/java/sem/Symbol.java	/^	public Symbol(String name) {$/;"	m	class:Symbol
+Symbol	src/java/sem/Symbol.java	/^public abstract class Symbol {$/;"	c
+Syscall	src/java/gen/asm/AssemblyItem.java	/^            public Syscall() {$/;"	m	class:AssemblyItem.Instruction.Syscall
+Syscall	src/java/gen/asm/AssemblyItem.java	/^        public static class Syscall extends Instruction {$/;"	c	class:AssemblyItem.Instruction
+TEXT	src/java/gen/asm/AssemblyProgram.java	/^        public enum Type {TEXT, DATA}$/;"	e	enum:AssemblyProgram.Section.Type	file:
+Test	src/java/gen/Test.java	/^public class Test {$/;"	c
+Test2	src/java/gen/Test2.java	/^public class Test2 {$/;"	c
+ToFile	src/java/util/ToFile.java	/^public class ToFile {$/;"	c
+Token	src/java/lexer/Token.java	/^    public Token (TokenClass tokenClass, String data, int lineNum, int colNum) {$/;"	m	class:Token
+Token	src/java/lexer/Token.java	/^    public Token(TokenClass type, int lineNum, int colNum) {$/;"	m	class:Token
+Token	src/java/lexer/Token.java	/^public class Token {$/;"	c
+TokenClass	src/java/lexer/Token.java	/^    public enum TokenClass {$/;"	g	class:Token
+Tokeniser	src/java/lexer/Tokeniser.java	/^    public Tokeniser(Scanner scanner) {$/;"	m	class:Tokeniser
+Tokeniser	src/java/lexer/Tokeniser.java	/^public class Tokeniser {$/;"	c
+Type	src/java/ast/Type.java	/^public interface Type extends ASTNode {$/;"	i
+Type	src/java/gen/asm/AssemblyProgram.java	/^        public enum Type {TEXT, DATA}$/;"	g	class:AssemblyProgram.Section
+TypeCheckVisitor	src/java/sem/TypeCheckVisitor.java	/^public class TypeCheckVisitor extends BaseSemanticVisitor<Type> {$/;"	c
+TypecastExpr	src/java/ast/TypecastExpr.java	/^    public TypecastExpr(Type type, Expr expr) {$/;"	m	class:TypecastExpr
+TypecastExpr	src/java/ast/TypecastExpr.java	/^public class TypecastExpr extends Expr{$/;"	c
+VOID	src/java/ast/BaseType.java	/^    INT, CHAR, VOID;$/;"	e	enum:BaseType	file:
+VOID	src/java/lexer/Token.java	/^        VOID, \/\/ "void"$/;"	e	enum:Token.TokenClass	file:
+ValueAtExpr	src/java/ast/ValueAtExpr.java	/^    public ValueAtExpr(Expr expr) {$/;"	m	class:ValueAtExpr
+ValueAtExpr	src/java/ast/ValueAtExpr.java	/^public class ValueAtExpr extends Expr {$/;"	c
+VarDecl	src/java/ast/VarDecl.java	/^    public VarDecl(Type type, String varName) {$/;"	m	class:VarDecl
+VarDecl	src/java/ast/VarDecl.java	/^public class VarDecl implements ASTNode {$/;"	c
+VarExpr	src/java/ast/VarExpr.java	/^    public VarExpr(String name) {$/;"	m	class:VarExpr
+VarExpr	src/java/ast/VarExpr.java	/^    public VarExpr(VarDecl varDecl, String varName) {$/;"	m	class:VarExpr
+VarExpr	src/java/ast/VarExpr.java	/^public class VarExpr extends Expr {$/;"	c
+VarSymbol	src/java/sem/VarSymbol.java	/^    public VarSymbol(VarDecl varDecl) {$/;"	m	class:VarSymbol
+VarSymbol	src/java/sem/VarSymbol.java	/^public class VarSymbol extends Symbol {$/;"	c
+Virtual	src/java/gen/asm/Register.java	/^        public Virtual() {$/;"	m	class:Register.Virtual
+Virtual	src/java/gen/asm/Register.java	/^    static public class Virtual extends Register {$/;"	c	class:Register
+WHILE	src/java/lexer/Token.java	/^        WHILE,  \/\/ "while"$/;"	e	enum:Token.TokenClass	file:
+While	src/java/ast/While.java	/^    public While(Expr expr, Stmt stmt) {$/;"	m	class:While
+While	src/java/ast/While.java	/^public class While extends Stmt {$/;"	c
+__init__	automark.py	/^    def __init__(self, path, expected_codes, modes=[MODE.LEXER, MODE.PARSER, MODE.AST, MODE.SEM, MODE.GEN], mars_callback = None):$/;"	m	class:Build
+__repr__	automark.py	/^    def __repr__(self):$/;"	m	class:Build	file:
+a	tests/array_complex_reduction_8.c	/^int a() {$/;"	f
+a	tests/fun-assign.c	/^int a() {$/;"	f
+a	tests/return_struct.c	/^struct Book a() {$/;"	f
+a	tests/simple_return_int.c	/^int a() {$/;"	f
+a0	src/java/gen/asm/Register.java	/^        public static final Arch a0 = new Arch(4, "a0");$/;"	f	class:Register.Arch
+a1	src/java/gen/asm/Register.java	/^        public static final Arch a1 = new Arch(5, "a1");$/;"	f	class:Register.Arch
+a11	tests/tictactoe-copy.c	/^char a11; char a12; char a13;$/;"	v
+a11	tests/tictactoe.c	/^char a11;$/;"	v
+a12	tests/tictactoe-copy.c	/^char a11; char a12; char a13;$/;"	v
+a12	tests/tictactoe.c	/^char a12;$/;"	v
+a13	tests/tictactoe-copy.c	/^char a11; char a12; char a13;$/;"	v
+a13	tests/tictactoe.c	/^char a13;$/;"	v
+a2	src/java/gen/asm/Register.java	/^        public static final Arch a2 = new Arch(6, "a2");$/;"	f	class:Register.Arch
+a21	tests/tictactoe-copy.c	/^char a21; char a22; char a23;$/;"	v
+a21	tests/tictactoe.c	/^char a21;$/;"	v
+a22	tests/tictactoe-copy.c	/^char a21; char a22; char a23;$/;"	v
+a22	tests/tictactoe.c	/^char a22;$/;"	v
+a23	tests/tictactoe-copy.c	/^char a21; char a22; char a23;$/;"	v
+a23	tests/tictactoe.c	/^char a23;$/;"	v
+a3	src/java/gen/asm/Register.java	/^        public static final Arch a3 = new Arch(7, "a3");$/;"	f	class:Register.Arch
+a31	tests/tictactoe-copy.c	/^char a31; char a32; char a33;$/;"	v
+a31	tests/tictactoe.c	/^char a31;$/;"	v
+a32	tests/tictactoe-copy.c	/^char a31; char a32; char a33;$/;"	v
+a32	tests/tictactoe.c	/^char a32;$/;"	v
+a33	tests/tictactoe-copy.c	/^char a31; char a32; char a33;$/;"	v
+a33	tests/tictactoe.c	/^char a33;$/;"	v
+accept	src/java/ast/ASTNode.java	/^    public <T> T accept(ASTVisitor<T> v);$/;"	m	interface:ASTNode
+accept	src/java/ast/AddressOfExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:AddressOfExpr
+accept	src/java/ast/ArrayAccessExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:ArrayAccessExpr
+accept	src/java/ast/ArrayType.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:ArrayType
+accept	src/java/ast/Assign.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:Assign
+accept	src/java/ast/BaseType.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:BaseType
+accept	src/java/ast/BinOp.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:BinOp
+accept	src/java/ast/Block.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:Block
+accept	src/java/ast/ChrLiteral.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:ChrLiteral
+accept	src/java/ast/Expr.java	/^    public abstract <T> T accept(ASTVisitor<T> v);$/;"	m	class:Expr
+accept	src/java/ast/ExprStmt.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:ExprStmt
+accept	src/java/ast/FieldAccessExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:FieldAccessExpr
+accept	src/java/ast/FunCallExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:FunCallExpr
+accept	src/java/ast/FunDecl.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:FunDecl
+accept	src/java/ast/If.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:If
+accept	src/java/ast/IntLiteral.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:IntLiteral
+accept	src/java/ast/PointerType.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:PointerType
+accept	src/java/ast/Program.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:Program
+accept	src/java/ast/Return.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:Return
+accept	src/java/ast/SizeOfExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:SizeOfExpr
+accept	src/java/ast/Stmt.java	/^    public abstract <T> T accept(ASTVisitor<T> v);$/;"	m	class:Stmt
+accept	src/java/ast/StrLiteral.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:StrLiteral
+accept	src/java/ast/StructType.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:StructType
+accept	src/java/ast/StructTypeDecl.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:StructTypeDecl
+accept	src/java/ast/Type.java	/^    public <T> T accept(ASTVisitor<T> v);$/;"	m	interface:Type
+accept	src/java/ast/TypecastExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:TypecastExpr
+accept	src/java/ast/ValueAtExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:ValueAtExpr
+accept	src/java/ast/VarDecl.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:VarDecl
+accept	src/java/ast/VarExpr.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:VarExpr
+accept	src/java/ast/While.java	/^    public <T> T accept(ASTVisitor<T> v) {$/;"	m	class:While
+accept	src/java/gen/CFGNode.java	/^    public void accept(BaseCFGNodeVisitor v) {$/;"	m	class:CFGNode
+accept	src/java/gen/asm/AssemblyItem.java	/^        public void accept(AssemblyItemVisitor v) {$/;"	m	class:AssemblyItem.Comment
+accept	src/java/gen/asm/AssemblyItem.java	/^        public void accept(AssemblyItemVisitor v) {$/;"	m	class:AssemblyItem.Directive
+accept	src/java/gen/asm/AssemblyItem.java	/^        public void accept(AssemblyItemVisitor v) {$/;"	m	class:AssemblyItem.Instruction
+accept	src/java/gen/asm/AssemblyItem.java	/^        public void accept(AssemblyItemVisitor v) {$/;"	m	class:AssemblyItem.Label
+accept	src/java/gen/asm/AssemblyItem.java	/^        public void accept(AssemblyItemVisitor v) {$/;"	m	class:AssemblyItem.MainLabel
+accept	src/java/gen/asm/AssemblyItem.java	/^    public abstract void accept(AssemblyItemVisitor v);$/;"	m	class:AssemblyItem
+accept	src/java/parser/Parser.java	/^    private boolean accept(TokenClass... expected) {$/;"	m	class:Parser	file:
+add	tests/all-syntax.c	/^int add(int a, int b) {$/;"	f
+add	tests/funcall.c	/^int add(int a, int b) {$/;"	f
+addChild	src/java/gen/CFGDotPrinter.java	/^        public void addChild(DotNode dn) {$/;"	m	class:CFGDotPrinter.DotGraph
+addLiveIn	src/java/gen/CFGNode.java	/^    public void addLiveIn(Register reg) {$/;"	m	class:CFGNode
+addLiveOut	src/java/gen/CFGNode.java	/^    public void addLiveOut(Register reg) {$/;"	m	class:CFGNode
+addPred	src/java/gen/CFGNode.java	/^    public void addPred(CFGNode pred) {$/;"	m	class:CFGNode
+addSucc	src/java/gen/CFGNode.java	/^    public void addSucc(CFGNode succ) {$/;"	m	class:CFGNode
+addToGraph	src/java/gen/InterferenceGraph.java	/^    public void addToGraph(Register[] regs) {$/;"	m	class:InterferenceGraph
+adjacentTo	src/java/gen/InterferenceGraph.java	/^        public boolean adjacentTo(Register reg) {$/;"	m	class:InterferenceGraph.Node
+allocReg	src/java/gen/InterferenceGraph.java	/^        private Register allocReg = null;$/;"	f	class:InterferenceGraph.Node	file:
+allocableArchs	src/java/gen/asm/Register.java	/^        public static final Arch[] allocableArchs = {$/;"	f	class:Register.Arch
+analyze	src/java/sem/SemanticAnalyzer.java	/^	public int analyze(ast.Program prog) {$/;"	m	class:SemanticAnalyzer
+args	automark.py	/^args = parser.parse_args()$/;"	v
+args	src/java/ast/FunCallExpr.java	/^    public List<Expr> args;$/;"	f	class:FunCallExpr
+array	src/java/ast/ArrayAccessExpr.java	/^    public Expr array;$/;"	f	class:ArrayAccessExpr
+array	tests/simple-for-gen.c	/^int array[7];$/;"	v
+array_complex_reduction_8	automark.py	/^    def array_complex_reduction_8():$/;"	f
+asmProg	src/java/gen/AddrGen.java	/^    private AssemblyProgram asmProg;$/;"	f	class:AddrGen	file:
+asmProg	src/java/gen/ExprGen.java	/^    private AssemblyProgram asmProg;$/;"	f	class:ExprGen	file:
+asmProg	src/java/gen/FunGen.java	/^    private AssemblyProgram asmProg;$/;"	f	class:FunGen	file:
+asmProg	src/java/gen/LivenessAnalyzer.java	/^    private AssemblyProgram asmProg;$/;"	f	class:LivenessAnalyzer	file:
+asmProg	src/java/gen/ProgramGen.java	/^    private final AssemblyProgram asmProg;$/;"	f	class:ProgramGen	file:
+ast	src/java/ast/ASTNode.java	/^package ast;$/;"	p
+ast	src/java/ast/ASTPrinter.java	/^package ast;$/;"	p
+ast	src/java/ast/ASTVisitor.java	/^package ast;$/;"	p
+ast	src/java/ast/AddressOfExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/ArrayAccessExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/ArrayType.java	/^package ast;$/;"	p
+ast	src/java/ast/Assign.java	/^package ast;$/;"	p
+ast	src/java/ast/BaseType.java	/^package ast;$/;"	p
+ast	src/java/ast/BinOp.java	/^package ast;$/;"	p
+ast	src/java/ast/Block.java	/^package ast;$/;"	p
+ast	src/java/ast/ChrLiteral.java	/^package ast;$/;"	p
+ast	src/java/ast/Expr.java	/^package ast;$/;"	p
+ast	src/java/ast/ExprStmt.java	/^package ast;$/;"	p
+ast	src/java/ast/FieldAccessExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/FunCallExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/FunDecl.java	/^package ast;$/;"	p
+ast	src/java/ast/If.java	/^package ast;$/;"	p
+ast	src/java/ast/IntLiteral.java	/^package ast;$/;"	p
+ast	src/java/ast/Op.java	/^package ast;$/;"	p
+ast	src/java/ast/PointerType.java	/^package ast;$/;"	p
+ast	src/java/ast/Program.java	/^package ast;$/;"	p
+ast	src/java/ast/Return.java	/^package ast;$/;"	p
+ast	src/java/ast/SizeOfExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/Stmt.java	/^package ast;$/;"	p
+ast	src/java/ast/StrLiteral.java	/^package ast;$/;"	p
+ast	src/java/ast/StructType.java	/^package ast;$/;"	p
+ast	src/java/ast/StructTypeDecl.java	/^package ast;$/;"	p
+ast	src/java/ast/Type.java	/^package ast;$/;"	p
+ast	src/java/ast/TypecastExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/ValueAtExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/VarDecl.java	/^package ast;$/;"	p
+ast	src/java/ast/VarExpr.java	/^package ast;$/;"	p
+ast	src/java/ast/While.java	/^package ast;$/;"	p
+ast	tests/ast/ArrayTypeTest.java	/^package ast;$/;"	p
+author	tests/all-syntax.c	/^  struct Author author;$/;"	m	struct:Book	typeref:struct:Book::Author	file:
+author	tests/simple-for-gen.c	/^struct Author author;$/;"	v	typeref:struct:Author
+author	tests/structs.c	/^   char  author[50];$/;"	m	struct:Books	file:
+authors	tests/all-syntax.c	/^  struct Author authors[10];$/;"	m	struct:Book	typeref:struct:Book::Author	file:
+b	tests/fun-assign.c	/^int b() {$/;"	f
+biConnectTo	src/java/gen/InterferenceGraph.java	/^        public void biConnectTo(Node node) {$/;"	m	class:InterferenceGraph.Node
+binary_search	automark.py	/^    def binary_search():$/;"	f
+block	src/java/ast/FunDecl.java	/^    public final Block block;$/;"	f	class:FunDecl
+blockIdxs	src/java/gen/ReturnStructVisitor.java	/^    Stack<Integer> blockIdxs = new Stack<>();$/;"	f	class:ReturnStructVisitor
+blocks	src/java/gen/ReturnStructVisitor.java	/^    Stack<Block> blocks = new Stack<>();$/;"	f	class:ReturnStructVisitor
+book_id	tests/structs.c	/^   int   book_id;$/;"	m	struct:Books	file:
+buffer	src/java/parser/Parser.java	/^    private final Queue<Token> buffer = new LinkedList<>();$/;"	f	class:Parser	file:
+buildCFG	src/java/gen/LivenessAnalyzer.java	/^    private CFGNode buildCFG(AssemblyProgram.Section section) {$/;"	m	class:LivenessAnalyzer	file:
+builds	automark.py	/^    builds = [$/;"	v
+builtinSymbolTable	src/java/sem/BuiltinFunSymbols.java	/^    static Map<String, Symbol> builtinSymbolTable = Stream.of(new Object[][]{$/;"	f	class:BuiltinFunSymbols
+c	src/java/ast/ChrLiteral.java	/^    public char c;$/;"	f	class:ChrLiteral
+c	tests/simple-for-gen.c	/^  char c;$/;"	m	struct:Author	file:
+c	tests/simple-for-gen.c	/^char c;$/;"	v
+cal	tests/arith-mismatch0.c	/^int cal() {$/;"	f
+cal	tests/arith-mismatch1.c	/^int cal() {$/;"	f
+cc	tests/simple-for-gen.c	/^char cc;$/;"	v
+ccc	tests/simple-for-gen.c	/^char ccc;$/;"	v
+children	src/java/gen/CFGDotPrinter.java	/^        public List<DotNode> children;$/;"	f	class:CFGDotPrinter.DotGraph
+close	src/java/lexer/Scanner.java	/^    public void close() throws IOException {$/;"	m	class:Scanner
+cmain	tests/returns.c	/^char cmain() {$/;"	f
+cnt	src/java/gen/asm/AssemblyItem.java	/^        private static int cnt = 0;$/;"	f	class:AssemblyItem.Label	file:
+cnt	src/java/gen/asm/Register.java	/^        private static int cnt = 0;$/;"	f	class:Register.Virtual	file:
+collectVirtualRegisters	src/java/regalloc/NaiveRegAlloc.java	/^    private static Map<Register.Virtual, AssemblyItem.Label>  collectVirtualRegisters(AssemblyProgram.Section section) {$/;"	m	class:NaiveRegAlloc	file:
+collectVirtualRegisters	src/java/regalloc/SmartRegAlloc.java	/^    private static Map<Register.Virtual, AssemblyItem.Label> collectVirtualRegisters(AssemblyProgram.Section section, InterferenceGraph infGraph) {$/;"	m	class:SmartRegAlloc	file:
+coloring	src/java/gen/InterferenceGraph.java	/^    public void coloring() {$/;"	m	class:InterferenceGraph
+column	src/java/lexer/Scanner.java	/^    private int column = 0;$/;"	f	class:Scanner	file:
+column	src/java/util/Position.java	/^    final int column;$/;"	f	class:Position
+comment	src/java/gen/asm/AssemblyItem.java	/^        String comment;$/;"	f	class:AssemblyItem.Comment
+condition	src/java/ast/If.java	/^    public Expr condition;$/;"	f	class:If
+condition	src/java/ast/While.java	/^    public Expr condition;$/;"	f	class:While
+connectTo	src/java/gen/InterferenceGraph.java	/^        public void connectTo(Node node) {$/;"	m	class:InterferenceGraph.Node
+connects	src/java/gen/InterferenceGraph.java	/^        private Set<Node> connects = new HashSet<>();$/;"	f	class:InterferenceGraph.Node	file:
+containsRegister	src/java/gen/InterferenceGraph.java	/^    public Boolean containsRegister(Register vReg) {$/;"	m	class:InterferenceGraph
+content	src/java/gen/CFGDotPrinter.java	/^        public String content;$/;"	f	class:CFGDotPrinter.DotText
+count	automark.py	/^    def count(self):$/;"	m	class:Build
+curFd	src/java/gen/ReturnStructVisitor.java	/^    FunDecl curFd;$/;"	f	class:ReturnStructVisitor
+currSection	src/java/gen/asm/AssemblyProgram.java	/^    private Section currSection;$/;"	f	class:AssemblyProgram	file:
+currentFd	src/java/gen/FunGen.java	/^    private FunDecl currentFd;$/;"	f	class:FunGen	file:
+data	src/java/lexer/Token.java	/^    public final String data;$/;"	f	class:Token
+dataSection	src/java/gen/asm/AssemblyProgram.java	/^    private Section dataSection;$/;"	f	class:AssemblyProgram	file:
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.Branch
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.IInstruction
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.JR
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.LA
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.LI
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.LW
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.LabelLoad
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.LabelStore
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.Load
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.MOVE
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.RInstruction
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.SingleBranchInstruction
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.Store
+def	src/java/gen/asm/AssemblyItem.java	/^            public Register def() {$/;"	m	class:AssemblyItem.Instruction.Syscall
+def	src/java/gen/asm/AssemblyItem.java	/^        public abstract Register def();$/;"	m	class:AssemblyItem.Instruction
+dg	src/java/gen/CFGDotPrinter.java	/^    public DotGraph dg = new DotGraph();$/;"	f	class:CFGDotPrinter
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.IInstruction
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.LA
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.LI
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.LW
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.LabelLoad
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.MOVE
+dst	src/java/gen/asm/AssemblyItem.java	/^            public final Register dst;$/;"	f	class:AssemblyItem.Instruction.RInstruction
+elementType	src/java/ast/ArrayType.java	/^    public Type elementType;$/;"	f	class:ArrayType
+elementType	src/java/ast/PointerType.java	/^    public Type elementType;$/;"	f	class:PointerType
+elseBranch	src/java/ast/If.java	/^    public Stmt elseBranch; \/\/ optional$/;"	f	class:If
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(AssemblyItem.Comment comment) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(AssemblyItem.Directive directive) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(AssemblyItem.Instruction instruction) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(AssemblyItem.Label label){$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(String comment) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(String opcode, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(String opcode, Register dst, Register src, int imm) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(String opcode, Register dst, Register src1, Register src2) {$/;"	m	class:AssemblyProgram.Section
+emit	src/java/gen/asm/AssemblyProgram.java	/^        public void emit(String opcode, Register src1, Register src2, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emitInstructionWithoutVirtualRegister	src/java/regalloc/NaiveRegAlloc.java	/^    private static void emitInstructionWithoutVirtualRegister(AssemblyItem.Instruction insn, Map<Register.Virtual, AssemblyItem.Label> vrMap, AssemblyProgram.Section section) {$/;"	m	class:NaiveRegAlloc	file:
+emitJR	src/java/gen/asm/AssemblyProgram.java	/^        public void emitJR() {$/;"	m	class:AssemblyProgram.Section
+emitLA	src/java/gen/asm/AssemblyProgram.java	/^        public void emitLA(Register dst, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emitLI	src/java/gen/asm/AssemblyProgram.java	/^        public void emitLI(Register dst, int imm) {$/;"	m	class:AssemblyProgram.Section
+emitLW	src/java/gen/asm/AssemblyProgram.java	/^        public void emitLW(Register dst, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emitLoad	src/java/gen/asm/AssemblyProgram.java	/^        public void emitLoad(String opcode, Register dst, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emitLoad	src/java/gen/asm/AssemblyProgram.java	/^        public void emitLoad(String opcode, Register val, Register addr, int imm) {$/;"	m	class:AssemblyProgram.Section
+emitMOVE	src/java/gen/asm/AssemblyProgram.java	/^        public void emitMOVE(Register dst, Register src) {$/;"	m	class:AssemblyProgram.Section
+emitProgram	src/java/gen/CodeGenerator.java	/^    public void emitProgram(Program astProgram, File outputFile) throws FileNotFoundException {$/;"	m	class:CodeGenerator
+emitSection	src/java/gen/asm/AssemblyProgram.java	/^    public void emitSection(Section section) {$/;"	m	class:AssemblyProgram
+emitStore	src/java/gen/asm/AssemblyProgram.java	/^        public void emitStore(String opcode, Register src, AssemblyItem.Label label) {$/;"	m	class:AssemblyProgram.Section
+emitStore	src/java/gen/asm/AssemblyProgram.java	/^        public void emitStore(String opcode, Register val, Register addr, int imm) {$/;"	m	class:AssemblyProgram.Section
+emitSyscall	src/java/gen/asm/AssemblyProgram.java	/^        public void emitSyscall() {$/;"	m	class:AssemblyProgram.Section
+empty	tests/tictactoe-copy.c	/^char empty; \/\/ Empty cell character$/;"	v
+empty	tests/tictactoe.c	/^char empty; \/\/ Empty cell character$/;"	v
+empty_func	tests/all-syntax.c	/^void empty_func() {$/;"	f
+entryNode	src/java/gen/CFGNode.java	/^    private boolean entryNode = false;$/;"	f	class:CFGNode	file:
+epilog	src/java/gen/FunGen.java	/^    public void epilog() {$/;"	m	class:FunGen
+equals	src/java/ast/ArrayType.java	/^    public boolean equals(Object obj) {$/;"	m	class:ArrayType
+equals	src/java/ast/PointerType.java	/^    public boolean equals(Object obj) {$/;"	m	class:PointerType
+equals	src/java/ast/StructType.java	/^    public boolean equals(Object obj) {$/;"	m	class:StructType
+equals	src/java/gen/CFGNode.java	/^    public boolean equals(Object o) {$/;"	m	class:CFGNode
+equals	src/java/gen/InterferenceGraph.java	/^        public boolean equals(Object o) {$/;"	m	class:InterferenceGraph.Node
+equals	src/java/gen/asm/AssemblyItem.java	/^        public boolean equals(Object o) {$/;"	m	class:AssemblyItem.Label
+equals	src/java/gen/asm/Register.java	/^        public boolean equals(Object o) {$/;"	m	class:Register.Arch
+equals	src/java/gen/asm/Register.java	/^        public boolean equals(Object o) {$/;"	m	class:Register.Virtual
+error	src/java/lexer/Tokeniser.java	/^    private int error = 0;$/;"	f	class:Tokeniser	file:
+error	src/java/lexer/Tokeniser.java	/^    private void error(char c, int line, int col) {$/;"	m	class:Tokeniser	file:
+error	src/java/parser/Parser.java	/^    private int error = 0;$/;"	f	class:Parser	file:
+error	src/java/parser/Parser.java	/^    private void error(TokenClass... expected) {$/;"	m	class:Parser	file:
+error	src/java/sem/BaseSemanticVisitor.java	/^	protected void error(String message) {$/;"	m	class:BaseSemanticVisitor
+errors	src/java/sem/BaseSemanticVisitor.java	/^	private int errors;$/;"	f	class:BaseSemanticVisitor	file:
+expect	src/java/parser/Parser.java	/^    private Token expect(TokenClass... expected) {$/;"	m	class:Parser	file:
+expr	src/java/ast/AddressOfExpr.java	/^    public Expr expr;$/;"	f	class:AddressOfExpr
+expr	src/java/ast/ExprStmt.java	/^    public Expr expr;$/;"	f	class:ExprStmt
+expr	src/java/ast/Return.java	/^    public Expr expr; \/\/ optional$/;"	f	class:Return
+expr	src/java/ast/TypecastExpr.java	/^    public Expr expr;$/;"	f	class:TypecastExpr
+expr	src/java/ast/ValueAtExpr.java	/^    public Expr expr;$/;"	f	class:ValueAtExpr
+fail_count	automark.py	/^    def fail_count(self):$/;"	m	class:Build
+fibonacci	automark.py	/^    def fibonacci():$/;"	f
+field1	tests/structs-correct.c	/^struct node_t { int field1; char field2; };$/;"	m	struct:node_t	file:
+field2	tests/structs-correct.c	/^struct node_t { int field1; char field2; };$/;"	m	struct:node_t	file:
+fieldName	src/java/ast/FieldAccessExpr.java	/^    public String fieldName;$/;"	f	class:FieldAccessExpr
+findLabelNode	src/java/gen/LivenessAnalyzer.java	/^    private CFGNode findLabelNode(CFGNode entry, AssemblyItem.Label label) {$/;"	m	class:LivenessAnalyzer	file:
+findStructType	src/java/sem/TypeCheckVisitor.java	/^    public StructType findStructType(Type t) {$/;"	m	class:TypeCheckVisitor
+food	tests/struct-gen.c	/^  int food;$/;"	m	struct:Book	file:
+fp	src/java/gen/asm/Register.java	/^        public static final Arch fp = new Arch(30, "fp");$/;"	f	class:Register.Arch
+full	tests/tictactoe-copy.c	/^int full() {$/;"	f
+full	tests/tictactoe.c	/^int full()$/;"	f
+funDecl	src/java/ast/FunCallExpr.java	/^    public FunDecl funDecl; \/\/ to be fill by name analysis$/;"	f	class:FunCallExpr
+funDecl	src/java/sem/FunSymbol.java	/^    public FunDecl funDecl;$/;"	f	class:FunSymbol
+funDeclStack	src/java/sem/TypeCheckVisitor.java	/^    private final Stack<FunDecl> funDeclStack = new Stack<>();$/;"	f	class:TypeCheckVisitor	file:
+funDecls	src/java/ast/Program.java	/^    public final List<FunDecl> funDecls;$/;"	f	class:Program
+funcName	src/java/ast/FunCallExpr.java	/^    public String funcName;$/;"	f	class:FunCallExpr
+gen	src/java/gen/AddrGen.java	/^package gen;$/;"	p
+gen	src/java/gen/AllocationLocationVisitor.java	/^package gen;$/;"	p
+gen	src/java/gen/BaseCFGNodeVisitor.java	/^package gen;$/;"	p
+gen	src/java/gen/CFGDotPrinter.java	/^package gen;$/;"	p
+gen	src/java/gen/CFGNode.java	/^package gen;$/;"	p
+gen	src/java/gen/CodeGenerator.java	/^package gen;$/;"	p
+gen	src/java/gen/ExprGen.java	/^package gen;$/;"	p
+gen	src/java/gen/FunGen.java	/^package gen;$/;"	p
+gen	src/java/gen/InterferenceGraph.java	/^package gen;$/;"	p
+gen	src/java/gen/LivenessAnalyzer.java	/^package gen;$/;"	p
+gen	src/java/gen/ProgramGen.java	/^package gen;$/;"	p
+gen	src/java/gen/ReturnStructVisitor.java	/^package gen;$/;"	p
+gen	src/java/gen/Test.java	/^package gen;$/;"	p
+gen	src/java/gen/Test2.java	/^package gen;$/;"	p
+gen.asm	src/java/gen/asm/AssemblyItem.java	/^package gen.asm;$/;"	p
+gen.asm	src/java/gen/asm/AssemblyItemVisitor.java	/^package gen.asm;$/;"	p
+gen.asm	src/java/gen/asm/AssemblyProgram.java	/^package gen.asm;$/;"	p
+gen.asm	src/java/gen/asm/Register.java	/^package gen.asm;$/;"	p
+getAllocReg	src/java/gen/InterferenceGraph.java	/^        public Register getAllocReg() {$/;"	m	class:InterferenceGraph.Node
+getArray	src/java/ast/ArrayAccessExpr.java	/^    public Expr getArray() {$/;"	m	class:ArrayAccessExpr
+getColumn	src/java/lexer/Scanner.java	/^    public int getColumn() {$/;"	m	class:Scanner
+getCondition	src/java/ast/If.java	/^    public Expr getCondition() {$/;"	m	class:If
+getCondition	src/java/ast/While.java	/^    public Expr getCondition() {$/;"	m	class:While
+getCurFunDecl	src/java/sem/TypeCheckVisitor.java	/^    private FunDecl getCurFunDecl() {$/;"	m	class:TypeCheckVisitor	file:
+getCurrSection	src/java/gen/asm/AssemblyProgram.java	/^    public Section getCurrSection() {$/;"	m	class:AssemblyProgram
+getDataSection	src/java/gen/asm/AssemblyProgram.java	/^    public Section getDataSection() {return dataSection; }$/;"	m	class:AssemblyProgram
+getDegree	src/java/gen/InterferenceGraph.java	/^        public int getDegree(Stack<Node> nodes, List<Node> spillNodes) {$/;"	m	class:InterferenceGraph.Node
+getErrorCount	src/java/lexer/Tokeniser.java	/^    public int getErrorCount() {$/;"	m	class:Tokeniser
+getErrorCount	src/java/parser/Parser.java	/^    public int getErrorCount() {$/;"	m	class:Parser
+getErrorCount	src/java/sem/BaseSemanticVisitor.java	/^	public int getErrorCount() {$/;"	m	class:BaseSemanticVisitor
+getErrorCount	src/java/sem/SemanticVisitor.java	/^	public int getErrorCount();$/;"	m	interface:SemanticVisitor
+getExpr	src/java/ast/AddressOfExpr.java	/^    public Expr getExpr() {$/;"	m	class:AddressOfExpr
+getExpr	src/java/ast/ExprStmt.java	/^    public Expr getExpr() {$/;"	m	class:ExprStmt
+getExpr	src/java/ast/Return.java	/^    public Expr getExpr() {$/;"	m	class:Return
+getExpr	src/java/ast/TypecastExpr.java	/^    public Expr getExpr() {$/;"	m	class:TypecastExpr
+getExpr	src/java/ast/ValueAtExpr.java	/^    public Expr getExpr() {$/;"	m	class:ValueAtExpr
+getId	src/java/gen/asm/Register.java	/^        public int getId() {$/;"	m	class:Register.Virtual
+getIdx	src/java/ast/ArrayAccessExpr.java	/^    public Expr getIdx() {$/;"	m	class:ArrayAccessExpr
+getIns	src/java/gen/CFGNode.java	/^    public List<AssemblyItem.Instruction> getIns() {$/;"	m	class:CFGNode
+getInstruction	src/java/gen/CFGNode.java	/^    public AssemblyItem.Instruction getInstruction() {$/;"	m	class:CFGNode
+getLabel	src/java/ast/StrLiteral.java	/^    public AssemblyItem.Label getLabel() {$/;"	m	class:StrLiteral
+getLabel	src/java/gen/InterferenceGraph.java	/^        public AssemblyItem.Label getLabel() {$/;"	m	class:InterferenceGraph.Node
+getLeft	src/java/ast/Assign.java	/^    public Expr getLeft() {$/;"	m	class:Assign
+getLeft	src/java/ast/BinOp.java	/^    public Expr getLeft() {$/;"	m	class:BinOp
+getLine	src/java/lexer/Scanner.java	/^    public int getLine() {$/;"	m	class:Scanner
+getLiveIn	src/java/gen/CFGNode.java	/^    public Set<Register> getLiveIn() {$/;"	m	class:CFGNode
+getLiveInCopy	src/java/gen/CFGNode.java	/^    public Set<Register> getLiveInCopy() {$/;"	m	class:CFGNode
+getLiveOut	src/java/gen/CFGNode.java	/^    public Set<Register> getLiveOut() {$/;"	m	class:CFGNode
+getLiveOutCopy	src/java/gen/CFGNode.java	/^    public Set<Register> getLiveOutCopy() {$/;"	m	class:CFGNode
+getOffset	src/java/ast/VarDecl.java	/^    public int getOffset() {$/;"	m	class:VarDecl
+getOuts	src/java/gen/CFGNode.java	/^    public List<AssemblyItem.Instruction> getOuts() {$/;"	m	class:CFGNode
+getPreLabels	src/java/gen/CFGNode.java	/^    public List<AssemblyItem.Label> getPreLabels() {$/;"	m	class:CFGNode
+getPreds	src/java/gen/CFGNode.java	/^    public List<CFGNode> getPreds() {$/;"	m	class:CFGNode
+getRight	src/java/ast/Assign.java	/^    public Expr getRight() {$/;"	m	class:Assign
+getRight	src/java/ast/BinOp.java	/^    public Expr getRight() {$/;"	m	class:BinOp
+getScope	src/java/sem/NameAnalysisVisitor.java	/^	public Scope getScope() {$/;"	m	class:NameAnalysisVisitor
+getStd	src/java/ast/StructType.java	/^    public StructTypeDecl getStd() {$/;"	m	class:StructType
+getStmts	src/java/ast/Block.java	/^    public List<Stmt> getStmts() {$/;"	m	class:Block
+getStringLength	src/java/gen/asm/AssemblyItem.java	/^            public int getStringLength(String s) {$/;"	m	class:AssemblyItem.Directive.StringAllocation
+getStructure	src/java/ast/FieldAccessExpr.java	/^    public Expr getStructure() {$/;"	m	class:FieldAccessExpr
+getSuccs	src/java/gen/CFGNode.java	/^    public List<CFGNode> getSuccs() {$/;"	m	class:CFGNode
+getUniqueName	src/java/gen/ReturnStructVisitor.java	/^    static String getUniqueName(String prefix) {$/;"	m	class:ReturnStructVisitor
+getVarDecl	src/java/ast/StructTypeDecl.java	/^    public VarDecl getVarDecl(String fieldName) {$/;"	m	class:StructTypeDecl
+getVarDecls	src/java/ast/Block.java	/^    public List<VarDecl> getVarDecls() {$/;"	m	class:Block
+getVreg	src/java/gen/InterferenceGraph.java	/^        public Register getVreg() {$/;"	m	class:InterferenceGraph.Node
+get_mark	tests/tictactoe-copy.c	/^char get_mark(int player) {$/;"	f
+get_mark	tests/tictactoe.c	/^char get_mark(int player)$/;"	f
+global_c	tests/stdlib.c	/^char global_c;$/;"	v
+gp	src/java/gen/asm/Register.java	/^        public static final Arch gp = new Arch(28, "gp");$/;"	f	class:Register.Arch
+handleBranchAndJump	src/java/gen/LivenessAnalyzer.java	/^    private void handleBranchAndJump(CFGNode entry) {$/;"	m	class:LivenessAnalyzer	file:
+hashCode	src/java/ast/StructType.java	/^    public int hashCode() {$/;"	m	class:StructType
+hashCode	src/java/gen/CFGNode.java	/^    public int hashCode() {$/;"	m	class:CFGNode
+hashCode	src/java/gen/InterferenceGraph.java	/^        public int hashCode() {$/;"	m	class:InterferenceGraph.Node
+hashCode	src/java/gen/asm/AssemblyItem.java	/^        public int hashCode() {$/;"	m	class:AssemblyItem.Label
+hashCode	src/java/gen/asm/Register.java	/^        public int hashCode() {$/;"	m	class:Register.Arch
+hashCode	src/java/gen/asm/Register.java	/^        public int hashCode() {$/;"	m	class:Register.Virtual
+i	src/java/ast/IntLiteral.java	/^    public int i;$/;"	f	class:IntLiteral
+i	tests/simple-for-gen.c	/^int i;$/;"	v
+id	src/java/gen/CFGNode.java	/^    private static long id = 0;$/;"	f	class:CFGNode	file:
+id	src/java/gen/asm/AssemblyItem.java	/^        private final int id = cnt++;$/;"	f	class:AssemblyItem.Label	file:
+id	src/java/gen/asm/Register.java	/^        private final int id;$/;"	f	class:Register.Virtual	file:
+idx	src/java/ast/ArrayAccessExpr.java	/^    public Expr idx;$/;"	f	class:ArrayAccessExpr
+ifBranch	src/java/ast/If.java	/^    public Stmt ifBranch;$/;"	f	class:If
+imain	tests/returns.c	/^int imain() {$/;"	f
+imm	src/java/gen/asm/AssemblyItem.java	/^            public final int imm;$/;"	f	class:AssemblyItem.Instruction.IInstruction
+imm	src/java/gen/asm/AssemblyItem.java	/^            public final int imm;$/;"	f	class:AssemblyItem.Instruction.LI
+imm	src/java/gen/asm/AssemblyItem.java	/^            public final int imm;$/;"	f	class:AssemblyItem.Instruction.MemIndirect
+indent	src/java/ast/ASTPrinter.java	/^    private void indent() {$/;"	m	class:ASTPrinter	file:
+indentLevel	src/java/ast/ASTPrinter.java	/^    private int indentLevel = 0;$/;"	f	class:ASTPrinter	file:
+inprint	src/java/ast/ASTPrinter.java	/^    private void inprint(String s) {$/;"	m	class:ASTPrinter	file:
+input	src/java/lexer/Scanner.java	/^    private BufferedReader input;$/;"	f	class:Scanner	file:
+ins	src/java/gen/CFGNode.java	/^    private List<AssemblyItem.Instruction> ins;$/;"	f	class:CFGNode	file:
+instruction	src/java/gen/CFGNode.java	/^    private AssemblyItem.Instruction instruction = null;$/;"	f	class:CFGNode	file:
+isBlock	src/java/parser/Parser.java	/^    private boolean isBlock() {$/;"	m	class:Parser	file:
+isEmittbale	src/java/gen/InterferenceGraph.java	/^    public boolean isEmittbale(List<Register> regs) {$/;"	m	class:InterferenceGraph
+isEntry	src/java/gen/InterferenceGraph.java	/^        private boolean isEntry;$/;"	f	class:InterferenceGraph.Node	file:
+isEntryNode	src/java/gen/CFGNode.java	/^    public boolean isEntryNode() {$/;"	m	class:CFGNode
+isExp	src/java/parser/Parser.java	/^    private boolean isExp() {$/;"	m	class:Parser	file:
+isFunDecls	src/java/parser/Parser.java	/^    private boolean isFunDecls() {$/;"	m	class:Parser	file:
+isFunSymbol	src/java/sem/FunSymbol.java	/^    public boolean isFunSymbol() {$/;"	m	class:FunSymbol
+isFunSymbol	src/java/sem/Symbol.java	/^	abstract public boolean isFunSymbol();$/;"	m	class:Symbol
+isFunSymbol	src/java/sem/VarSymbol.java	/^    public boolean isFunSymbol() {$/;"	m	class:VarSymbol
+isGlobal	src/java/ast/VarDecl.java	/^    public boolean isGlobal = false; \/\/ statically allocated$/;"	f	class:VarDecl
+isIf	src/java/parser/Parser.java	/^    private boolean isIf() {$/;"	m	class:Parser	file:
+isRegister	src/java/ast/VarDecl.java	/^    public boolean isRegister; \/\/ register allocated$/;"	f	class:VarDecl
+isReturn	src/java/parser/Parser.java	/^    private boolean isReturn() {$/;"	m	class:Parser	file:
+isSpill	src/java/gen/InterferenceGraph.java	/^    public boolean isSpill(Register vReg) {$/;"	m	class:InterferenceGraph
+isStructType	src/java/parser/Parser.java	/^    private boolean isStructType() {$/;"	m	class:Parser	file:
+isStructType	src/java/parser/Parser.java	/^    private boolean isStructType(int lookAhaed) {$/;"	m	class:Parser	file:
+isType	src/java/parser/Parser.java	/^    private boolean isType() {$/;"	m	class:Parser	file:
+isType	src/java/parser/Parser.java	/^    private boolean isType(int lookAhaed) {$/;"	m	class:Parser	file:
+isVarDecls	src/java/parser/Parser.java	/^    private boolean isVarDecls() {$/;"	m	class:Parser	file:
+isVarDecls	src/java/parser/Parser.java	/^    private boolean isVarDecls(int lookAhead) {$/;"	m	class:Parser	file:
+isVarSymbol	src/java/sem/FunSymbol.java	/^    public boolean isVarSymbol() {$/;"	m	class:FunSymbol
+isVarSymbol	src/java/sem/Symbol.java	/^	abstract public boolean isVarSymbol();$/;"	m	class:Symbol
+isVarSymbol	src/java/sem/VarSymbol.java	/^    public boolean isVarSymbol() {$/;"	m	class:VarSymbol
+isVirtual	src/java/gen/asm/Register.java	/^        public boolean isVirtual() {$/;"	m	class:Register.Arch
+isVirtual	src/java/gen/asm/Register.java	/^        public boolean isVirtual() {$/;"	m	class:Register.Virtual
+isVirtual	src/java/gen/asm/Register.java	/^    abstract public boolean isVirtual();$/;"	m	class:Register
+isWhileLoop	src/java/parser/Parser.java	/^    private boolean isWhileLoop() {$/;"	m	class:Parser	file:
+items	src/java/gen/asm/AssemblyProgram.java	/^        public final List<AssemblyItem> items = new ArrayList<AssemblyItem>();$/;"	f	class:AssemblyProgram.Section
+job	src/java/gen/BaseCFGNodeVisitor.java	/^    abstract public T job(CFGNode node);$/;"	m	class:BaseCFGNodeVisitor
+job	src/java/gen/CFGDotPrinter.java	/^    public Void job(CFGNode node) {$/;"	m	class:CFGDotPrinter
+job	src/java/gen/InterferenceGraph.java	/^        abstract T job(Node node);$/;"	m	class:InterferenceGraph.BaseInfGraphVisitor
+k	tests/simple-for-gen.c	/^  char k;$/;"	m	struct:Author	file:
+label	src/java/ast/FunDecl.java	/^    public AssemblyItem.Label label;$/;"	f	class:FunDecl
+label	src/java/ast/StrLiteral.java	/^    public AssemblyItem.Label label;$/;"	f	class:StrLiteral
+label	src/java/ast/VarDecl.java	/^    public Label label;$/;"	f	class:VarDecl
+label	src/java/gen/InterferenceGraph.java	/^        private AssemblyItem.Label label;$/;"	f	class:InterferenceGraph.Node	file:
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.Branch
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.LA
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.LW
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.LabelLoad
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.LabelStore
+label	src/java/gen/asm/AssemblyItem.java	/^            public final Label label;$/;"	f	class:AssemblyItem.Instruction.SingleBranchInstruction
+lastErrorToken	src/java/parser/Parser.java	/^    private Token lastErrorToken;$/;"	f	class:Parser	file:
+left	src/java/ast/Assign.java	/^    public Expr left;$/;"	f	class:Assign
+left	src/java/ast/BinOp.java	/^    public Expr left;$/;"	f	class:BinOp
+left	src/java/gen/CFGDotPrinter.java	/^        public DotText left;$/;"	f	class:CFGDotPrinter.DotArrow
+lexer	src/java/lexer/Scanner.java	/^package lexer;$/;"	p
+lexer	src/java/lexer/Token.java	/^package lexer;$/;"	p
+lexer	src/java/lexer/Tokeniser.java	/^package lexer;$/;"	p
+line	src/java/lexer/Scanner.java	/^    private int line = 1;$/;"	f	class:Scanner	file:
+line	src/java/util/Position.java	/^    final int line;$/;"	f	class:Position
+liveIn	src/java/gen/CFGNode.java	/^    private Set<Register> liveIn = new HashSet<>();$/;"	f	class:CFGNode	file:
+liveOut	src/java/gen/CFGNode.java	/^    private Set<Register> liveOut = new HashSet<>();$/;"	f	class:CFGNode	file:
+livenessAnalyze	src/java/gen/LivenessAnalyzer.java	/^    private void livenessAnalyze(CFGNode entry) {$/;"	m	class:LivenessAnalyzer	file:
+lookAhead	src/java/parser/Parser.java	/^    private Token lookAhead(int i) {$/;"	m	class:Parser	file:
+lookAheadAType	src/java/parser/Parser.java	/^    private int lookAheadAType() {$/;"	m	class:Parser	file:
+lookup	src/java/sem/Scope.java	/^	public Symbol lookup(String name) {$/;"	m	class:Scope
+lookupCurrent	src/java/sem/Scope.java	/^	public Symbol lookupCurrent(String name) {$/;"	m	class:Scope
+main	src/java/Main.java	/^    public static void main(String[] args) {$/;"	m	class:Main
+main	src/java/MainPart2.java	/^    public static void main(String[] args) {$/;"	m	class:MainPart2
+main	src/java/gen/Test.java	/^    public static void main(String[] args) {$/;"	m	class:Test
+main	src/java/gen/Test2.java	/^    public static void main(String[] args) {$/;"	m	class:Test2
+main	tests/all-syntax.c	/^void main() {$/;"	f
+main	tests/array_complex_reduction_8.c	/^void main() { print_i(a()); }$/;"	f
+main	tests/binary_search.c	/^void main() {$/;"	f
+main	tests/branching.c	/^void main() {$/;"	f
+main	tests/char.c	/^void main() {$/;"	f
+main	tests/comments.c	/^int main() {$/;"	f
+main	tests/fibonacci.c	/^void main() {$/;"	f
+main	tests/fun-assign.c	/^void main() {$/;"	f
+main	tests/funcall.c	/^void main() {$/;"	f
+main	tests/lvalue-violate.c	/^void main() {$/;"	f
+main	tests/nested-while.c	/^int main() {$/;"	f
+main	tests/read.c	/^void main() {$/;"	f
+main	tests/recur.c	/^void main() {$/;"	f
+main	tests/recursive.c	/^void main() {$/;"	f
+main	tests/reserved-keywords.c	/^void main() {$/;"	f
+main	tests/return_struct.c	/^void main() {$/;"	f
+main	tests/returning_multiple_times.c	/^void main() {$/;"	f
+main	tests/returns.c	/^void main() {$/;"	f
+main	tests/shadow.c	/^void main(){$/;"	f
+main	tests/simple-for-gen.c	/^void main() {$/;"	f
+main	tests/simple.c	/^void main() {$/;"	f
+main	tests/simple_return_int.c	/^void main() {print_i(a());}/;"	f
+main	tests/spill.c	/^void main() {$/;"	f
+main	tests/stdlib.c	/^void main() {$/;"	f
+main	tests/struct-gen.c	/^void main() {$/;"	f
+main	tests/tictactoe-copy.c	/^void main() {$/;"	f
+main	tests/tictactoe.c	/^void main()$/;"	f
+main	tests/unary-2.c	/^void main() {$/;"	f
+main	tests/unary-ops.c	/^void main() {$/;"	f
+main	tests/value_at.c	/^void main() {$/;"	f
+main	tests/while-loop-wrong.c	/^int main() {$/;"	f
+mars_callback	automark.py	/^        def mars_callback(p):$/;"	f	function:.array_complex_reduction_8
+mars_callback	automark.py	/^        def mars_callback(p):$/;"	f	function:.binary_search
+mars_callback	automark.py	/^        def mars_callback(p):$/;"	f	function:.fibonacci
+mars_callback	automark.py	/^        def mars_callback(p):$/;"	f	function:.recur
+mars_callback	automark.py	/^        def mars_callback(p):$/;"	f	function:.tictactoe
+mcmalloc	tests/minic-stdlib.h	/^void* mcmalloc(int size) {$/;"	f
+myid	src/java/gen/CFGNode.java	/^    private long myid = id++;$/;"	f	class:CFGNode	file:
+n	src/java/ast/ArrayType.java	/^    public int n;$/;"	f	class:ArrayType
+name	src/java/ast/FunDecl.java	/^    public final String name;$/;"	f	class:FunDecl
+name	src/java/ast/StructType.java	/^    public String name;$/;"	f	class:StructType
+name	src/java/gen/asm/AssemblyItem.java	/^        private final String name;$/;"	f	class:AssemblyItem.Label	file:
+name	src/java/gen/asm/AssemblyItem.java	/^        protected final String name;$/;"	f	class:AssemblyItem.Directive
+name	src/java/gen/asm/Register.java	/^        private final String name;$/;"	f	class:Register.Arch	file:
+name	src/java/sem/Symbol.java	/^	public String name;$/;"	f	class:Symbol
+name	tests/return_struct.c	/^  char* name;$/;"	m	struct:Book	file:
+name	tests/struct-gen.c	/^  char* name;$/;"	m	struct:Book	file:
+names	tests/all-syntax.c	/^  char names[10];$/;"	m	struct:Author	file:
+names	tests/simple-for-gen.c	/^  char names[10];$/;"	m	struct:Author	file:
+nat	tests/recursive.c	/^int nat(int n) {$/;"	f
+newMainSection	src/java/gen/asm/AssemblyProgram.java	/^    public Section newMainSection(Section.Type type) {$/;"	m	class:AssemblyProgram
+newSection	src/java/gen/asm/AssemblyProgram.java	/^    public Section newSection(Section.Type type) {$/;"	m	class:AssemblyProgram
+next	src/java/lexer/Scanner.java	/^    public char next() throws IOException {$/;"	m	class:Scanner
+next	src/java/lexer/Tokeniser.java	/^    private Token next() throws IOException {$/;"	m	class:Tokeniser	file:
+nextToken	src/java/lexer/Tokeniser.java	/^    public Token nextToken() {$/;"	m	class:Tokeniser
+nextToken	src/java/parser/Parser.java	/^    private void nextToken() {$/;"	m	class:Parser	file:
+node_t	tests/structs-correct.c	/^struct node_t { int field1; char field2; };$/;"	s	file:
+nodes	src/java/gen/InterferenceGraph.java	/^    public List<Node> nodes = new LinkedList<>();$/;"	f	class:InterferenceGraph
+num	src/java/gen/asm/Register.java	/^        private final int num;$/;"	f	class:Register.Arch	file:
+num	tests/recur.c	/^int num(int a) {$/;"	f
+offset	src/java/ast/VarDecl.java	/^    public int offset = -1;$/;"	f	class:VarDecl
+offset	src/java/gen/FunGen.java	/^    private int offset;$/;"	f	class:FunGen	file:
+offsets	src/java/gen/FunGen.java	/^    private Stack<Integer> offsets = new Stack<>();$/;"	f	class:FunGen	file:
+op	src/java/ast/BinOp.java	/^    public Op op;$/;"	f	class:BinOp
+op1	src/java/gen/asm/AssemblyItem.java	/^            public final Register op1;$/;"	f	class:AssemblyItem.Instruction.MemIndirect
+op2	src/java/gen/asm/AssemblyItem.java	/^            public final Register op2;$/;"	f	class:AssemblyItem.Instruction.MemIndirect
+opcode	src/java/gen/asm/AssemblyItem.java	/^        public final String opcode;$/;"	f	class:AssemblyItem.Instruction
+outer	src/java/sem/Scope.java	/^	private final Scope outer;$/;"	f	class:Scope	file:
+outs	src/java/gen/CFGNode.java	/^    private List<AssemblyItem.Instruction> outs;$/;"	f	class:CFGNode	file:
+page	tests/return_struct.c	/^  int page;$/;"	m	struct:Book	file:
+page	tests/struct-gen.c	/^  int page;$/;"	m	struct:Book	file:
+page1	tests/simple-for-gen.c	/^  int page1;$/;"	m	struct:Author	file:
+page2	tests/simple-for-gen.c	/^  int page2;$/;"	m	struct:Author	file:
+params	src/java/ast/FunDecl.java	/^    public final List<VarDecl> params;$/;"	f	class:FunDecl
+parse	src/java/parser/Parser.java	/^    public Program parse() {$/;"	m	class:Parser
+parseA	src/java/parser/Parser.java	/^    private Expr parseA() {$/;"	m	class:Parser	file:
+parseAddSub	src/java/parser/Parser.java	/^    private Expr parseAddSub() {$/;"	m	class:Parser	file:
+parseAddSubRest	src/java/parser/Parser.java	/^    private Expr parseAddSubRest(Expr pre) {$/;"	m	class:Parser	file:
+parseB	src/java/parser/Parser.java	/^    private Expr parseB(String ident) {$/;"	m	class:Parser	file:
+parseBlock	src/java/parser/Parser.java	/^    private Block parseBlock() {$/;"	m	class:Parser	file:
+parseC	src/java/parser/Parser.java	/^    private Expr parseC() {$/;"	m	class:Parser	file:
+parseCRest	src/java/parser/Parser.java	/^    private Expr parseCRest(Expr preExpr) {$/;"	m	class:Parser	file:
+parseCompare	src/java/parser/Parser.java	/^    private Expr parseCompare() {$/;"	m	class:Parser	file:
+parseCompareRest	src/java/parser/Parser.java	/^    private Expr parseCompareRest(Expr pre) {$/;"	m	class:Parser	file:
+parseEq	src/java/parser/Parser.java	/^    private Expr parseEq() {$/;"	m	class:Parser	file:
+parseEqRest	src/java/parser/Parser.java	/^    private Expr parseEqRest(Expr pre) {$/;"	m	class:Parser	file:
+parseExp	src/java/parser/Parser.java	/^    private Expr parseExp() {$/;"	m	class:Parser	file:
+parseFunDecls	src/java/parser/Parser.java	/^    private List<FunDecl> parseFunDecls() {$/;"	m	class:Parser	file:
+parseIf	src/java/parser/Parser.java	/^    private If parseIf() {$/;"	m	class:Parser	file:
+parseIncludes	src/java/parser/Parser.java	/^    private void parseIncludes() {$/;"	m	class:Parser	file:
+parseLand	src/java/parser/Parser.java	/^    private Expr parseLand() {$/;"	m	class:Parser	file:
+parseLandRest	src/java/parser/Parser.java	/^    private Expr parseLandRest(Expr pre) {$/;"	m	class:Parser	file:
+parseLorRest	src/java/parser/Parser.java	/^    private Expr parseLorRest(Expr pre) {$/;"	m	class:Parser	file:
+parseMulDivMod	src/java/parser/Parser.java	/^    private Expr parseMulDivMod() {$/;"	m	class:Parser	file:
+parseMulDivModRest	src/java/parser/Parser.java	/^    private Expr parseMulDivModRest(Expr pre) {$/;"	m	class:Parser	file:
+parseOthers	src/java/parser/Parser.java	/^    private Expr parseOthers() {$/;"	m	class:Parser	file:
+parseParams	src/java/parser/Parser.java	/^    private List<VarDecl> parseParams() {$/;"	m	class:Parser	file:
+parseProgram	src/java/parser/Parser.java	/^    private Program parseProgram() {$/;"	m	class:Parser	file:
+parseReturn	src/java/parser/Parser.java	/^    private Return parseReturn() {$/;"	m	class:Parser	file:
+parseStmt	src/java/parser/Parser.java	/^    private Stmt parseStmt() {$/;"	m	class:Parser	file:
+parseStmtsForBlock	src/java/parser/Parser.java	/^    private List<Stmt> parseStmtsForBlock() {$/;"	m	class:Parser	file:
+parseStructDecls	src/java/parser/Parser.java	/^    private List<StructTypeDecl> parseStructDecls() {$/;"	m	class:Parser	file:
+parseStructType	src/java/parser/Parser.java	/^    private StructType parseStructType() {$/;"	m	class:Parser	file:
+parseType	src/java/parser/Parser.java	/^    private Type parseType() {$/;"	m	class:Parser	file:
+parseVarDecls	src/java/parser/Parser.java	/^    private List<VarDecl> parseVarDecls() {$/;"	m	class:Parser	file:
+parseWhileLoop	src/java/parser/Parser.java	/^    private Stmt parseWhileLoop() {$/;"	m	class:Parser	file:
+parser	automark.py	/^parser = argparse.ArgumentParser(description='auto marking')$/;"	v
+parser	src/java/parser/Parser.java	/^package parser;$/;"	p
+path	src/java/gen/CFGDotPrinter.java	/^    public String path;$/;"	f	class:CFGDotPrinter
+peek	src/java/lexer/Scanner.java	/^    public char peek() throws IOException {$/;"	m	class:Scanner
+peeked	src/java/lexer/Scanner.java	/^    private int peeked = -1;$/;"	f	class:Scanner	file:
+popFunDecl	src/java/sem/TypeCheckVisitor.java	/^    private void popFunDecl() {$/;"	m	class:TypeCheckVisitor	file:
+popRegisters	src/java/gen/asm/AssemblyItem.java	/^        public static final Instruction popRegisters = new Instruction("popReg") {$/;"	f	class:AssemblyItem.Instruction
+popScope	src/java/sem/NameAnalysisVisitor.java	/^	public Scope popScope() {$/;"	m	class:NameAnalysisVisitor
+populate	src/java/gen/InterferenceGraph.java	/^    public void populate(Register reg) {$/;"	m	class:InterferenceGraph
+position	src/java/lexer/Token.java	/^    public final Position position;$/;"	f	class:Token
+preLabels	src/java/gen/CFGNode.java	/^    private List<AssemblyItem.Label> preLabels = new LinkedList<>(); \/\/ labels in front of a instruction$/;"	f	class:CFGNode	file:
+preds	src/java/gen/CFGNode.java	/^    private List<CFGNode> preds = new LinkedList();$/;"	f	class:CFGNode	file:
+price	tests/all-syntax.c	/^  int price;$/;"	m	struct:Book	file:
+price	tests/all-syntax.c	/^int price;$/;"	v
+price	tests/return_struct.c	/^  int price;$/;"	m	struct:Book	file:
+price	tests/same-fields-struct.c	/^  int price;$/;"	m	struct:Book	file:
+price	tests/struct-gen.c	/^  int price;$/;"	m	struct:Book	file:
+print	src/java/gen/asm/AssemblyProgram.java	/^        public void print(final PrintWriter writer) {$/;"	m	class:AssemblyProgram.Section
+print	src/java/gen/asm/AssemblyProgram.java	/^    public void print(final PrintWriter writer) {$/;"	m	class:AssemblyProgram
+printGame	tests/tictactoe-copy.c	/^void printGame() {$/;"	f
+printGame	tests/tictactoe.c	/^void printGame()$/;"	f
+printWinner	tests/tictactoe-copy.c	/^void printWinner(int player) {$/;"	f
+printWinner	tests/tictactoe.c	/^void printWinner(int player)$/;"	f
+print_c	tests/minic-stdlib.h	/^void print_c(char c) {$/;"	f
+print_i	tests/minic-stdlib.h	/^void print_i(int i) {$/;"	f
+print_i	tests/print_i.c	/^void print_i(int i) {$/;"	f
+print_s	tests/minic-stdlib.h	/^void print_s(const char* s) {$/;"	f
+pushFunDecl	src/java/sem/TypeCheckVisitor.java	/^    private void pushFunDecl(FunDecl funDecl) {$/;"	m	class:TypeCheckVisitor	file:
+pushRegisters	src/java/gen/asm/AssemblyItem.java	/^        public static final Instruction pushRegisters = new Instruction("pushReg") {$/;"	f	class:AssemblyItem.Instruction
+pushScope	src/java/sem/NameAnalysisVisitor.java	/^	public Scope pushScope(Scope scope) {$/;"	m	class:NameAnalysisVisitor
+put	src/java/sem/Scope.java	/^	public void put(Symbol sym) {$/;"	m	class:Scope
+ra	src/java/gen/asm/Register.java	/^        public static final Arch ra = new Arch(31, "ra");$/;"	f	class:Register.Arch
+read_c	tests/minic-stdlib.h	/^char read_c() {$/;"	f
+read_i	tests/minic-stdlib.h	/^int read_i() {$/;"	f
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public Branch rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.Branch
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public IInstruction rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.IInstruction
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public JR rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.JR
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public LA rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.LA
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public LI rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.LI
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public LW rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.LW
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public LabelLoad rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.LabelLoad
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public LabelStore rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.LabelStore
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public Load rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.Load
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public MOVE rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.MOVE
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public RInstruction rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.RInstruction
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public SingleBranchInstruction rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.SingleBranchInstruction
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public Store rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.Store
+rebuild	src/java/gen/asm/AssemblyItem.java	/^            public Syscall rebuild(Map<Register, Register> regMap) {$/;"	m	class:AssemblyItem.Instruction.Syscall
+rebuild	src/java/gen/asm/AssemblyItem.java	/^        public abstract Instruction rebuild(Map<Register, Register> regMap);$/;"	m	class:AssemblyItem.Instruction
+recur	automark.py	/^    def recur():$/;"	f
+regNodeMap	src/java/gen/InterferenceGraph.java	/^    public Map<Register, Node> regNodeMap = new HashMap<>();$/;"	f	class:InterferenceGraph
+regalloc	src/java/regalloc/NaiveRegAlloc.java	/^package regalloc;$/;"	p
+regalloc	src/java/regalloc/SmartRegAlloc.java	/^package regalloc;$/;"	p
+register	src/java/ast/VarDecl.java	/^    public Register register;$/;"	f	class:VarDecl
+registers	src/java/gen/asm/AssemblyItem.java	/^        public List<Register> registers() {$/;"	m	class:AssemblyItem.Instruction
+reset	tests/tictactoe-copy.c	/^void reset() {$/;"	f
+reset	tests/tictactoe.c	/^void reset()$/;"	f
+right	src/java/ast/Assign.java	/^    public Expr right;$/;"	f	class:Assign
+right	src/java/ast/BinOp.java	/^    public Expr right;$/;"	f	class:BinOp
+right	src/java/gen/CFGDotPrinter.java	/^        public DotText right;$/;"	f	class:CFGDotPrinter.DotArrow
+run	automark.py	/^    def run(self):$/;"	m	class:Build
+run	src/java/gen/CFGDotPrinter.java	/^    public void run(CFGNode node) {$/;"	m	class:CFGDotPrinter
+run	src/java/gen/LivenessAnalyzer.java	/^    public LinkedList<CFGNode> run() {$/;"	m	class:LivenessAnalyzer
+run	src/java/regalloc/NaiveRegAlloc.java	/^    public static AssemblyProgram run(AssemblyProgram prog) {$/;"	m	class:NaiveRegAlloc
+run	src/java/regalloc/SmartRegAlloc.java	/^    public static AssemblyProgram run(AssemblyProgram prog, List<InterferenceGraph> infGraphs) {$/;"	m	class:SmartRegAlloc
+s	src/java/ast/StrLiteral.java	/^    public String s;$/;"	f	class:StrLiteral
+s	src/java/gen/asm/AssemblyItem.java	/^            private final String s;$/;"	f	class:AssemblyItem.Directive.StringAllocation	file:
+s0	src/java/gen/asm/Register.java	/^        public static final Arch s0 = new Arch(16, "s0");$/;"	f	class:Register.Arch
+s1	src/java/gen/asm/Register.java	/^        public static final Arch s1 = new Arch(17, "s1");$/;"	f	class:Register.Arch
+s2	src/java/gen/asm/Register.java	/^        public static final Arch s2 = new Arch(18, "s2");$/;"	f	class:Register.Arch
+s3	src/java/gen/asm/Register.java	/^        public static final Arch s3 = new Arch(19, "s3");$/;"	f	class:Register.Arch
+s4	src/java/gen/asm/Register.java	/^        public static final Arch s4 = new Arch(20, "s4");$/;"	f	class:Register.Arch
+s5	src/java/gen/asm/Register.java	/^        public static final Arch s5 = new Arch(21, "s5");$/;"	f	class:Register.Arch
+s6	src/java/gen/asm/Register.java	/^        public static final Arch s6 = new Arch(22, "s6");$/;"	f	class:Register.Arch
+s7	src/java/gen/asm/Register.java	/^        public static final Arch s7 = new Arch(23, "s7");$/;"	f	class:Register.Arch
+scanner	src/java/lexer/Tokeniser.java	/^    private Scanner scanner;$/;"	f	class:Tokeniser	file:
+scopes	src/java/sem/NameAnalysisVisitor.java	/^	private final Stack<Scope> scopes;$/;"	f	class:NameAnalysisVisitor	file:
+search	tests/binary_search.c	/^int search(int *a, int target, int l, int r) {$/;"	f
+sections	src/java/gen/asm/AssemblyProgram.java	/^    public final List<Section> sections = new LinkedList<Section>();$/;"	f	class:AssemblyProgram
+seekLabel	src/java/gen/InterferenceGraph.java	/^    public AssemblyItem.Label seekLabel(Register vReg) {$/;"	m	class:InterferenceGraph
+seekRegister	src/java/gen/InterferenceGraph.java	/^    public Register seekRegister(Register vReg) {$/;"	m	class:InterferenceGraph
+selectmove	tests/tictactoe-copy.c	/^void selectmove(int player) {$/;"	f
+selectmove	tests/tictactoe.c	/^void selectmove(int player)$/;"	f
+sem	src/java/sem/BaseSemanticVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/BuiltinFunSymbols.java	/^package sem;$/;"	p
+sem	src/java/sem/FunSymbol.java	/^package sem;$/;"	p
+sem	src/java/sem/LValueVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/NameAnalysisVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/Scope.java	/^package sem;$/;"	p
+sem	src/java/sem/SemanticAnalyzer.java	/^package sem;$/;"	p
+sem	src/java/sem/SemanticVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/StructAssignVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/Symbol.java	/^package sem;$/;"	p
+sem	src/java/sem/TypeCheckVisitor.java	/^package sem;$/;"	p
+sem	src/java/sem/VarSymbol.java	/^package sem;$/;"	p
+set	tests/tictactoe-copy.c	/^int set(char row, int col, char mark) {$/;"	f
+set	tests/tictactoe.c	/^int set(char row, int col, char mark)$/;"	f
+setAll	src/java/ast/Block.java	/^    public void setAll(Block block) {$/;"	m	class:Block
+setAll	src/java/ast/Block.java	/^    public void setAll(List<VarDecl> varDecls, List<Stmt> stmts) {$/;"	m	class:Block
+setAllocReg	src/java/gen/InterferenceGraph.java	/^        public void setAllocReg() {$/;"	m	class:InterferenceGraph.Node
+setAllocReg	src/java/gen/InterferenceGraph.java	/^        public void setAllocReg(Register reg) {$/;"	m	class:InterferenceGraph.Node
+setArray	src/java/ast/ArrayAccessExpr.java	/^    public void setArray(Expr array) {$/;"	m	class:ArrayAccessExpr
+setCondition	src/java/ast/If.java	/^    public void setCondition(Expr condition) {$/;"	m	class:If
+setCondition	src/java/ast/While.java	/^    public void setCondition(Expr condition) {$/;"	m	class:While
+setExpr	src/java/ast/AddressOfExpr.java	/^    public void setExpr(Expr expr) {$/;"	m	class:AddressOfExpr
+setExpr	src/java/ast/ExprStmt.java	/^    public void setExpr(Expr expr) {$/;"	m	class:ExprStmt
+setExpr	src/java/ast/Return.java	/^    public void setExpr(Expr expr) {$/;"	m	class:Return
+setExpr	src/java/ast/TypecastExpr.java	/^    public void setExpr(Expr expr) {$/;"	m	class:TypecastExpr
+setExpr	src/java/ast/ValueAtExpr.java	/^    public void setExpr(Expr expr) {$/;"	m	class:ValueAtExpr
+setIdx	src/java/ast/ArrayAccessExpr.java	/^    public void setIdx(Expr idx) {$/;"	m	class:ArrayAccessExpr
+setIns	src/java/gen/CFGNode.java	/^    public void setIns(List<AssemblyItem.Instruction> ins) {$/;"	m	class:CFGNode
+setInstruction	src/java/gen/CFGNode.java	/^    public void setInstruction(AssemblyItem.Instruction instruction) {$/;"	m	class:CFGNode
+setLabel	src/java/ast/StrLiteral.java	/^    public void setLabel(AssemblyItem.Label label) {$/;"	m	class:StrLiteral
+setLabel	src/java/ast/VarDecl.java	/^    public void setLabel(Label label) {$/;"	m	class:VarDecl
+setLabel	src/java/gen/InterferenceGraph.java	/^        public void setLabel(AssemblyItem.Label label) {$/;"	m	class:InterferenceGraph.Node
+setLeft	src/java/ast/Assign.java	/^    public void setLeft(Expr left) {$/;"	m	class:Assign
+setLeft	src/java/ast/BinOp.java	/^    public void setLeft(Expr left) {$/;"	m	class:BinOp
+setOffset	src/java/ast/VarDecl.java	/^    public void setOffset(int offset) {$/;"	m	class:VarDecl
+setOuts	src/java/gen/CFGNode.java	/^    public void setOuts(List<AssemblyItem.Instruction> outs) {$/;"	m	class:CFGNode
+setPreLabels	src/java/gen/CFGNode.java	/^    public void setPreLabels(List<AssemblyItem.Label> preLabels) {$/;"	m	class:CFGNode
+setRegister	src/java/ast/VarDecl.java	/^    public void setRegister(Register register) {$/;"	m	class:VarDecl
+setRegisterFlag	src/java/ast/VarDecl.java	/^    public void setRegisterFlag() {$/;"	m	class:VarDecl
+setRegisterFlag	src/java/ast/VarDecl.java	/^    public void setRegisterFlag(boolean register) {$/;"	m	class:VarDecl
+setRight	src/java/ast/Assign.java	/^    public void setRight(Expr right) {$/;"	m	class:Assign
+setRight	src/java/ast/BinOp.java	/^    public void setRight(Expr right) {$/;"	m	class:BinOp
+setStd	src/java/ast/StructType.java	/^    public void setStd(StructTypeDecl std) {$/;"	m	class:StructType
+setStmts	src/java/ast/Block.java	/^    public void setStmts(List<Stmt> stmts) {$/;"	m	class:Block
+setStructure	src/java/ast/FieldAccessExpr.java	/^    public void setStructure(Expr structure) {$/;"	m	class:FieldAccessExpr
+setType	src/java/ast/FunDecl.java	/^    public void setType(Type type) {$/;"	m	class:FunDecl
+setVarDecls	src/java/ast/Block.java	/^    public void setVarDecls(List<VarDecl> varDecls) {$/;"	m	class:Block
+setVreg	src/java/gen/InterferenceGraph.java	/^        public void setVreg(Register vreg) {$/;"	m	class:InterferenceGraph.Node
+shop	tests/return_struct.c	/^  int shop;$/;"	m	struct:Book	file:
+size	src/java/ast/VarDecl.java	/^    public int size() {$/;"	m	class:VarDecl
+size	src/java/gen/asm/AssemblyItem.java	/^            private final int size;$/;"	f	class:AssemblyItem.Directive.Space	file:
+sizeOf	src/java/util/SizeHelper.java	/^    public static int sizeOf(Type type) {$/;"	m	class:SizeHelper
+sp	src/java/gen/asm/Register.java	/^        public static final Arch sp = new Arch(29, "sp");$/;"	f	class:Register.Arch
+space	src/java/gen/asm/AssemblyItem.java	/^            private final Space space;$/;"	f	class:AssemblyItem.Directive.StaticAllocation	file:
+spillArchs	src/java/gen/asm/Register.java	/^        public static final Arch[] spillArchs = {$/;"	f	class:Register.Arch
+spillNodes	src/java/gen/InterferenceGraph.java	/^    public List<Node> spillNodes = new LinkedList<>();$/;"	f	class:InterferenceGraph
+src	src/java/gen/asm/AssemblyItem.java	/^            private final Register src = Register.Arch.ra;$/;"	f	class:AssemblyItem.Instruction.JR	file:
+src	src/java/gen/asm/AssemblyItem.java	/^            public final Register src;$/;"	f	class:AssemblyItem.Instruction.IInstruction
+src	src/java/gen/asm/AssemblyItem.java	/^            public final Register src;$/;"	f	class:AssemblyItem.Instruction.LabelStore
+src	src/java/gen/asm/AssemblyItem.java	/^            public final Register src;$/;"	f	class:AssemblyItem.Instruction.MOVE
+src1	src/java/gen/asm/AssemblyItem.java	/^            public final Register src1;$/;"	f	class:AssemblyItem.Instruction.Branch
+src1	src/java/gen/asm/AssemblyItem.java	/^            public final Register src1;$/;"	f	class:AssemblyItem.Instruction.RInstruction
+src2	src/java/gen/asm/AssemblyItem.java	/^            public final Register src2;$/;"	f	class:AssemblyItem.Instruction.Branch
+src2	src/java/gen/asm/AssemblyItem.java	/^            public final Register src2;$/;"	f	class:AssemblyItem.Instruction.RInstruction
+std	src/java/ast/StructType.java	/^    public StructTypeDecl std;$/;"	f	class:StructType
+stmt	src/java/ast/While.java	/^    public Stmt stmt;$/;"	f	class:While
+stmts	src/java/ast/Block.java	/^    public List<Stmt> stmts;$/;"	f	class:Block
+structMap	src/java/ast/StructType.java	/^    public static final Map<StructType, StructTypeDecl> structMap = new HashMap<StructType, StructTypeDecl>();$/;"	f	class:StructType
+structMap	src/java/sem/TypeCheckVisitor.java	/^    private final Map<StructType, StructTypeDecl> structMap = new HashMap<StructType, StructTypeDecl>();$/;"	f	class:TypeCheckVisitor	file:
+structTypeDecls	src/java/ast/Program.java	/^    public final List<StructTypeDecl> structTypeDecls;$/;"	f	class:Program
+structure	src/java/ast/FieldAccessExpr.java	/^    public Expr structure;$/;"	f	class:FieldAccessExpr
+subject	tests/structs.c	/^   char  subject[100];$/;"	m	struct:Books	file:
+succ_count	automark.py	/^    def succ_count(self):$/;"	m	class:Build
+succ_count	automark.py	/^    succ_count = 0$/;"	v
+succs	src/java/gen/CFGNode.java	/^    private List<CFGNode> succs = new LinkedList();$/;"	f	class:CFGNode	file:
+sum	tests/arith-mismatch0.c	/^int sum(int a, int b) {$/;"	f
+sum	tests/arith-mismatch1.c	/^int sum(int a, int b) {$/;"	f
+switchPlayer	tests/tictactoe-copy.c	/^int switchPlayer(int currentPlayer) {$/;"	f
+switchPlayer	tests/tictactoe.c	/^int switchPlayer(int currentPlayer)$/;"	f
+symbolTable	src/java/sem/Scope.java	/^	private final Map<String, Symbol> symbolTable;$/;"	f	class:Scope	file:
+t	src/java/ast/SizeOfExpr.java	/^    public Type t;$/;"	f	class:SizeOfExpr
+t	src/java/ast/TypecastExpr.java	/^    public Type t;$/;"	f	class:TypecastExpr
+t0	src/java/gen/asm/Register.java	/^        public static final Arch t0 = new Arch(8, "t0");$/;"	f	class:Register.Arch
+t1	src/java/gen/asm/Register.java	/^        public static final Arch t1 = new Arch(9, "t1");$/;"	f	class:Register.Arch
+t2	src/java/gen/asm/Register.java	/^        public static final Arch t2 = new Arch(10, "t2");$/;"	f	class:Register.Arch
+t3	src/java/gen/asm/Register.java	/^        public static final Arch t3 = new Arch(11, "t3");$/;"	f	class:Register.Arch
+t4	src/java/gen/asm/Register.java	/^        public static final Arch t4 = new Arch(12, "t4");$/;"	f	class:Register.Arch
+t5	src/java/gen/asm/Register.java	/^        public static final Arch t5 = new Arch(13, "t5");$/;"	f	class:Register.Arch
+t6	src/java/gen/asm/Register.java	/^        public static final Arch t6 = new Arch(14, "t6");$/;"	f	class:Register.Arch
+t7	src/java/gen/asm/Register.java	/^        public static final Arch t7 = new Arch(15, "t7");$/;"	f	class:Register.Arch
+t8	src/java/gen/asm/Register.java	/^        public static final Arch t8 = new Arch(24, "t8");$/;"	f	class:Register.Arch
+t9	src/java/gen/asm/Register.java	/^        public static final Arch t9 = new Arch(25, "t9");$/;"	f	class:Register.Arch
+testEqual	tests/ast/ArrayTypeTest.java	/^    public void testEqual() {$/;"	m	class:ArrayTypeTest
+text	src/java/gen/FunGen.java	/^    private AssemblyProgram.Section text;$/;"	f	class:FunGen	file:
+tictactoe	automark.py	/^    def tictactoe():$/;"	f
+title	tests/structs.c	/^   char  title[50];$/;"	m	struct:Books	file:
+titles	tests/all-syntax.c	/^  char titles[10];$/;"	m	struct:Book	file:
+titles	tests/all-syntax.c	/^char titles[10];$/;"	v
+toString	src/java/gen/CFGDotPrinter.java	/^        abstract public String toString();$/;"	m	class:CFGDotPrinter.DotNode
+toString	src/java/gen/CFGDotPrinter.java	/^        public String toString() {$/;"	m	class:CFGDotPrinter.DotArrow
+toString	src/java/gen/CFGDotPrinter.java	/^        public String toString() {$/;"	m	class:CFGDotPrinter.DotGraph
+toString	src/java/gen/CFGDotPrinter.java	/^        public String toString() {$/;"	m	class:CFGDotPrinter.DotText
+toString	src/java/gen/CFGNode.java	/^    public String toString() {$/;"	m	class:CFGNode
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Directive.Space
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Directive.StaticAllocation
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Directive.StringAllocation
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.Branch
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.IInstruction
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.JR
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.LA
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.LI
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.LW
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.LabelLoad
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.LabelStore
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.MOVE
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.MemIndirect
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.RInstruction
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.SingleBranchInstruction
+toString	src/java/gen/asm/AssemblyItem.java	/^            public String toString() {$/;"	m	class:AssemblyItem.Instruction.Syscall
+toString	src/java/gen/asm/AssemblyItem.java	/^        public String toString() {$/;"	m	class:AssemblyItem.Comment
+toString	src/java/gen/asm/AssemblyItem.java	/^        public String toString() {$/;"	m	class:AssemblyItem.Directive
+toString	src/java/gen/asm/AssemblyItem.java	/^        public String toString() {$/;"	m	class:AssemblyItem.Label
+toString	src/java/gen/asm/AssemblyItem.java	/^        public String toString() {$/;"	m	class:AssemblyItem.MainLabel
+toString	src/java/gen/asm/Register.java	/^        public String toString() {$/;"	m	class:Register.Arch
+toString	src/java/gen/asm/Register.java	/^        public String toString() {$/;"	m	class:Register.Virtual
+toString	src/java/lexer/Token.java	/^    public String toString() {$/;"	m	class:Token
+toString	src/java/util/Position.java	/^    public String toString() {$/;"	m	class:Position
+token	src/java/parser/Parser.java	/^    private Token token;$/;"	f	class:Parser	file:
+tokenClass	src/java/lexer/Token.java	/^    public final TokenClass tokenClass;$/;"	f	class:Token
+tokeniser	src/java/parser/Parser.java	/^    private final Tokeniser tokeniser;$/;"	f	class:Parser	file:
+total_count	automark.py	/^    total_count = 0$/;"	v
+type	src/java/ast/ArrayAccessExpr.java	/^    public Type type;$/;"	f	class:ArrayAccessExpr
+type	src/java/ast/Expr.java	/^    public Type type; \/\/ to be filled in by the type analyser$/;"	f	class:Expr
+type	src/java/ast/FunDecl.java	/^    public Type type;$/;"	f	class:FunDecl
+type	src/java/ast/StructTypeDecl.java	/^    public StructType type;$/;"	f	class:StructTypeDecl
+type	src/java/ast/VarDecl.java	/^    public final Type type;$/;"	f	class:VarDecl
+type	src/java/gen/asm/AssemblyProgram.java	/^        public final Type type;$/;"	f	class:AssemblyProgram.Section
+uniqueId	src/java/gen/ReturnStructVisitor.java	/^    static int uniqueId = 0;$/;"	f	class:ReturnStructVisitor
+updateLiveIn	src/java/gen/CFGNode.java	/^    public boolean updateLiveIn() {$/;"	m	class:CFGNode
+updateLiveOut	src/java/gen/CFGNode.java	/^    public boolean updateLiveOut() {$/;"	m	class:CFGNode
+usage	src/java/Main.java	/^    private static void usage() {$/;"	m	class:Main	file:
+usage	src/java/MainPart2.java	/^    private static void usage() {$/;"	m	class:MainPart2	file:
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.Branch
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.IInstruction
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.JR
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.LA
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.LI
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.LW
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.LabelLoad
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.LabelStore
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.Load
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.MOVE
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.RInstruction
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.SingleBranchInstruction
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.Store
+uses	src/java/gen/asm/AssemblyItem.java	/^            public List<Register> uses() {$/;"	m	class:AssemblyItem.Instruction.Syscall
+uses	src/java/gen/asm/AssemblyItem.java	/^        public abstract List<Register> uses();$/;"	m	class:AssemblyItem.Instruction
+util	src/java/util/Position.java	/^package util;$/;"	p
+util	src/java/util/SizeHelper.java	/^package util;$/;"	p
+util	src/java/util/ToFile.java	/^package util;$/;"	p
+v0	src/java/gen/asm/Register.java	/^        public static final Arch v0 = new Arch(2, "v0");$/;"	f	class:Register.Arch
+v1	src/java/gen/asm/Register.java	/^        public static final Arch v1 = new Arch(3, "v1");$/;"	f	class:Register.Arch
+varDecl	src/java/ast/VarExpr.java	/^    public VarDecl varDecl; \/\/ to be filled in by the name analyser$/;"	f	class:VarExpr
+varDecl	src/java/sem/VarSymbol.java	/^    public VarDecl varDecl;$/;"	f	class:VarSymbol
+varDecls	src/java/ast/Block.java	/^    public List<VarDecl> varDecls;$/;"	f	class:Block
+varDecls	src/java/ast/Program.java	/^    public final List<VarDecl> varDecls;$/;"	f	class:Program
+varDecls	src/java/ast/StructTypeDecl.java	/^    public List<VarDecl> varDecls;$/;"	f	class:StructTypeDecl
+varName	src/java/ast/VarDecl.java	/^    public final String varName;$/;"	f	class:VarDecl
+varName	src/java/ast/VarExpr.java	/^    public final String varName;$/;"	f	class:VarExpr
+vdOffsets	src/java/gen/FunGen.java	/^    private Map<VarDecl, Integer> vdOffsets;$/;"	f	class:FunGen	file:
+visitAddressOfExpr	src/java/ast/ASTPrinter.java	/^    public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:ASTPrinter
+visitAddressOfExpr	src/java/ast/ASTVisitor.java	/^    public T visitAddressOfExpr(AddressOfExpr ao);$/;"	m	interface:ASTVisitor
+visitAddressOfExpr	src/java/gen/AddrGen.java	/^    public Register visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:AddrGen
+visitAddressOfExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:AllocationLocationVisitor
+visitAddressOfExpr	src/java/gen/ExprGen.java	/^    public Register visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:ExprGen
+visitAddressOfExpr	src/java/gen/FunGen.java	/^    public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:FunGen
+visitAddressOfExpr	src/java/gen/ProgramGen.java	/^    public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:ProgramGen
+visitAddressOfExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:ReturnStructVisitor
+visitAddressOfExpr	src/java/sem/LValueVisitor.java	/^    public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:LValueVisitor
+visitAddressOfExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:NameAnalysisVisitor
+visitAddressOfExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitAddressOfExpr(AddressOfExpr ao) {$/;"	m	class:TypeCheckVisitor
+visitArrayAccessExpr	src/java/ast/ASTPrinter.java	/^    public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:ASTPrinter
+visitArrayAccessExpr	src/java/ast/ASTVisitor.java	/^    public T visitArrayAccessExpr(ArrayAccessExpr aa);$/;"	m	interface:ASTVisitor
+visitArrayAccessExpr	src/java/gen/AddrGen.java	/^    public Register visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:AddrGen
+visitArrayAccessExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:AllocationLocationVisitor
+visitArrayAccessExpr	src/java/gen/ExprGen.java	/^    public Register visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:ExprGen
+visitArrayAccessExpr	src/java/gen/FunGen.java	/^    public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:FunGen
+visitArrayAccessExpr	src/java/gen/ProgramGen.java	/^    public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:ProgramGen
+visitArrayAccessExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:ReturnStructVisitor
+visitArrayAccessExpr	src/java/sem/LValueVisitor.java	/^    public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:LValueVisitor
+visitArrayAccessExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:NameAnalysisVisitor
+visitArrayAccessExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitArrayAccessExpr(ArrayAccessExpr aa) {$/;"	m	class:TypeCheckVisitor
+visitArrayType	src/java/ast/ASTPrinter.java	/^    public Void visitArrayType(ArrayType at) {$/;"	m	class:ASTPrinter
+visitArrayType	src/java/ast/ASTVisitor.java	/^    public T visitArrayType(ArrayType at);$/;"	m	interface:ASTVisitor
+visitArrayType	src/java/gen/AddrGen.java	/^    public Register visitArrayType(ArrayType at) {$/;"	m	class:AddrGen
+visitArrayType	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitArrayType(ArrayType at) {$/;"	m	class:AllocationLocationVisitor
+visitArrayType	src/java/gen/ExprGen.java	/^    public Register visitArrayType(ArrayType at) {$/;"	m	class:ExprGen
+visitArrayType	src/java/gen/FunGen.java	/^    public Void visitArrayType(ArrayType at) {$/;"	m	class:FunGen
+visitArrayType	src/java/gen/ProgramGen.java	/^    public Void visitArrayType(ArrayType at) {$/;"	m	class:ProgramGen
+visitArrayType	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitArrayType(ArrayType at) {$/;"	m	class:ReturnStructVisitor
+visitArrayType	src/java/sem/LValueVisitor.java	/^    public Void visitArrayType(ArrayType at) {$/;"	m	class:LValueVisitor
+visitArrayType	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitArrayType(ArrayType at) {$/;"	m	class:NameAnalysisVisitor
+visitArrayType	src/java/sem/TypeCheckVisitor.java	/^    public Type visitArrayType(ArrayType at) {$/;"	m	class:TypeCheckVisitor
+visitAssign	src/java/ast/ASTPrinter.java	/^    public Void visitAssign(Assign as) {$/;"	m	class:ASTPrinter
+visitAssign	src/java/ast/ASTVisitor.java	/^    public T visitAssign(Assign as);$/;"	m	interface:ASTVisitor
+visitAssign	src/java/gen/AddrGen.java	/^    public Register visitAssign(Assign as) {$/;"	m	class:AddrGen
+visitAssign	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitAssign(Assign as) {$/;"	m	class:AllocationLocationVisitor
+visitAssign	src/java/gen/ExprGen.java	/^    public Register visitAssign(Assign as) {$/;"	m	class:ExprGen
+visitAssign	src/java/gen/FunGen.java	/^    public Void visitAssign(Assign as) {$/;"	m	class:FunGen
+visitAssign	src/java/gen/ProgramGen.java	/^    public Void visitAssign(Assign as) {$/;"	m	class:ProgramGen
+visitAssign	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitAssign(Assign as) {$/;"	m	class:ReturnStructVisitor
+visitAssign	src/java/sem/LValueVisitor.java	/^    public Void visitAssign(Assign as) {$/;"	m	class:LValueVisitor
+visitAssign	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitAssign(Assign as) {$/;"	m	class:NameAnalysisVisitor
+visitAssign	src/java/sem/TypeCheckVisitor.java	/^    public Type visitAssign(Assign as) {$/;"	m	class:TypeCheckVisitor
+visitBaseType	src/java/ast/ASTPrinter.java	/^    public Void visitBaseType(BaseType bt) {$/;"	m	class:ASTPrinter
+visitBaseType	src/java/ast/ASTVisitor.java	/^    public T visitBaseType(BaseType bt);$/;"	m	interface:ASTVisitor
+visitBaseType	src/java/gen/AddrGen.java	/^    public Register visitBaseType(BaseType bt) {$/;"	m	class:AddrGen
+visitBaseType	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitBaseType(BaseType bt) {$/;"	m	class:AllocationLocationVisitor
+visitBaseType	src/java/gen/ExprGen.java	/^    public Register visitBaseType(BaseType bt) {$/;"	m	class:ExprGen
+visitBaseType	src/java/gen/FunGen.java	/^    public Void visitBaseType(BaseType bt) {$/;"	m	class:FunGen
+visitBaseType	src/java/gen/ProgramGen.java	/^    public Void visitBaseType(BaseType bt) {$/;"	m	class:ProgramGen
+visitBaseType	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitBaseType(BaseType bt) {$/;"	m	class:ReturnStructVisitor
+visitBaseType	src/java/sem/LValueVisitor.java	/^    public Void visitBaseType(BaseType bt) {$/;"	m	class:LValueVisitor
+visitBaseType	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitBaseType(BaseType bt) {$/;"	m	class:NameAnalysisVisitor
+visitBaseType	src/java/sem/TypeCheckVisitor.java	/^    public Type visitBaseType(BaseType bt) {$/;"	m	class:TypeCheckVisitor
+visitBinOp	src/java/ast/ASTPrinter.java	/^    public Void visitBinOp(BinOp bo) {$/;"	m	class:ASTPrinter
+visitBinOp	src/java/ast/ASTVisitor.java	/^    public T visitBinOp(BinOp bo);$/;"	m	interface:ASTVisitor
+visitBinOp	src/java/gen/AddrGen.java	/^    public Register visitBinOp(BinOp bo) {$/;"	m	class:AddrGen
+visitBinOp	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitBinOp(BinOp bo) {$/;"	m	class:AllocationLocationVisitor
+visitBinOp	src/java/gen/ExprGen.java	/^    public Register visitBinOp(BinOp bo) {$/;"	m	class:ExprGen
+visitBinOp	src/java/gen/FunGen.java	/^    public Void visitBinOp(BinOp bo) {$/;"	m	class:FunGen
+visitBinOp	src/java/gen/ProgramGen.java	/^    public Void visitBinOp(BinOp bo) {$/;"	m	class:ProgramGen
+visitBinOp	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitBinOp(BinOp bo) {$/;"	m	class:ReturnStructVisitor
+visitBinOp	src/java/sem/LValueVisitor.java	/^    public Void visitBinOp(BinOp bo) {$/;"	m	class:LValueVisitor
+visitBinOp	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitBinOp(BinOp bo) {$/;"	m	class:NameAnalysisVisitor
+visitBinOp	src/java/sem/TypeCheckVisitor.java	/^    public Type visitBinOp(BinOp bo) {$/;"	m	class:TypeCheckVisitor
+visitBlock	src/java/ast/ASTPrinter.java	/^    public Void visitBlock(Block b) {$/;"	m	class:ASTPrinter
+visitBlock	src/java/ast/ASTVisitor.java	/^    public T visitBlock(Block b);$/;"	m	interface:ASTVisitor
+visitBlock	src/java/gen/AddrGen.java	/^    public Register visitBlock(Block b) {$/;"	m	class:AddrGen
+visitBlock	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitBlock(Block b) {$/;"	m	class:AllocationLocationVisitor
+visitBlock	src/java/gen/ExprGen.java	/^    public Register visitBlock(Block b) {$/;"	m	class:ExprGen
+visitBlock	src/java/gen/FunGen.java	/^    public Void visitBlock(Block b) {$/;"	m	class:FunGen
+visitBlock	src/java/gen/ProgramGen.java	/^    public Void visitBlock(Block b)  {$/;"	m	class:ProgramGen
+visitBlock	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitBlock(Block b) {$/;"	m	class:ReturnStructVisitor
+visitBlock	src/java/sem/LValueVisitor.java	/^    public Void visitBlock(Block b) {$/;"	m	class:LValueVisitor
+visitBlock	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitBlock(Block b) {$/;"	m	class:NameAnalysisVisitor
+visitBlock	src/java/sem/TypeCheckVisitor.java	/^    public Type visitBlock(Block b) {$/;"	m	class:TypeCheckVisitor
+visitChrLiteral	src/java/ast/ASTPrinter.java	/^    public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:ASTPrinter
+visitChrLiteral	src/java/ast/ASTVisitor.java	/^    public T visitChrLiteral(ChrLiteral cl);$/;"	m	interface:ASTVisitor
+visitChrLiteral	src/java/gen/AddrGen.java	/^    public Register visitChrLiteral(ChrLiteral cl) {$/;"	m	class:AddrGen
+visitChrLiteral	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:AllocationLocationVisitor
+visitChrLiteral	src/java/gen/ExprGen.java	/^    public Register visitChrLiteral(ChrLiteral cl) {$/;"	m	class:ExprGen
+visitChrLiteral	src/java/gen/FunGen.java	/^    public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:FunGen
+visitChrLiteral	src/java/gen/ProgramGen.java	/^    public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:ProgramGen
+visitChrLiteral	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitChrLiteral(ChrLiteral cl) {$/;"	m	class:ReturnStructVisitor
+visitChrLiteral	src/java/sem/LValueVisitor.java	/^    public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:LValueVisitor
+visitChrLiteral	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitChrLiteral(ChrLiteral cl) {$/;"	m	class:NameAnalysisVisitor
+visitChrLiteral	src/java/sem/TypeCheckVisitor.java	/^    public Type visitChrLiteral(ChrLiteral cl) {$/;"	m	class:TypeCheckVisitor
+visitComment	src/java/gen/asm/AssemblyItemVisitor.java	/^    public T visitComment(AssemblyItem.Comment comment);$/;"	m	interface:AssemblyItemVisitor
+visitDirective	src/java/gen/asm/AssemblyItemVisitor.java	/^    public T visitDirective(AssemblyItem.Directive directive);$/;"	m	interface:AssemblyItemVisitor
+visitExprStmt	src/java/ast/ASTPrinter.java	/^    public Void visitExprStmt(ExprStmt es) {$/;"	m	class:ASTPrinter
+visitExprStmt	src/java/ast/ASTVisitor.java	/^    public T visitExprStmt(ExprStmt es);$/;"	m	interface:ASTVisitor
+visitExprStmt	src/java/gen/AddrGen.java	/^    public Register visitExprStmt(ExprStmt es) {$/;"	m	class:AddrGen
+visitExprStmt	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitExprStmt(ExprStmt es) {$/;"	m	class:AllocationLocationVisitor
+visitExprStmt	src/java/gen/ExprGen.java	/^    public Register visitExprStmt(ExprStmt es) {$/;"	m	class:ExprGen
+visitExprStmt	src/java/gen/FunGen.java	/^    public Void visitExprStmt(ExprStmt es) {$/;"	m	class:FunGen
+visitExprStmt	src/java/gen/ProgramGen.java	/^    public Void visitExprStmt(ExprStmt es) {$/;"	m	class:ProgramGen
+visitExprStmt	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitExprStmt(ExprStmt es) {$/;"	m	class:ReturnStructVisitor
+visitExprStmt	src/java/sem/LValueVisitor.java	/^    public Void visitExprStmt(ExprStmt es) {$/;"	m	class:LValueVisitor
+visitExprStmt	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitExprStmt(ExprStmt es) {$/;"	m	class:NameAnalysisVisitor
+visitExprStmt	src/java/sem/TypeCheckVisitor.java	/^    public Type visitExprStmt(ExprStmt es) {$/;"	m	class:TypeCheckVisitor
+visitFieldAccessExpr	src/java/ast/ASTPrinter.java	/^    public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:ASTPrinter
+visitFieldAccessExpr	src/java/ast/ASTVisitor.java	/^    public T visitFieldAccessExpr(FieldAccessExpr fa);$/;"	m	interface:ASTVisitor
+visitFieldAccessExpr	src/java/gen/AddrGen.java	/^    public Register visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:AddrGen
+visitFieldAccessExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:AllocationLocationVisitor
+visitFieldAccessExpr	src/java/gen/ExprGen.java	/^    public Register visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:ExprGen
+visitFieldAccessExpr	src/java/gen/FunGen.java	/^    public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:FunGen
+visitFieldAccessExpr	src/java/gen/ProgramGen.java	/^    public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:ProgramGen
+visitFieldAccessExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:ReturnStructVisitor
+visitFieldAccessExpr	src/java/sem/LValueVisitor.java	/^    public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:LValueVisitor
+visitFieldAccessExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:NameAnalysisVisitor
+visitFieldAccessExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitFieldAccessExpr(FieldAccessExpr fa) {$/;"	m	class:TypeCheckVisitor
+visitFunCallExpr	src/java/ast/ASTPrinter.java	/^    public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:ASTPrinter
+visitFunCallExpr	src/java/ast/ASTVisitor.java	/^    public T visitFunCallExpr(FunCallExpr fc);$/;"	m	interface:ASTVisitor
+visitFunCallExpr	src/java/gen/AddrGen.java	/^    public Register visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:AddrGen
+visitFunCallExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:AllocationLocationVisitor
+visitFunCallExpr	src/java/gen/ExprGen.java	/^    public Register visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:ExprGen
+visitFunCallExpr	src/java/gen/FunGen.java	/^    public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:FunGen
+visitFunCallExpr	src/java/gen/ProgramGen.java	/^    public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:ProgramGen
+visitFunCallExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:ReturnStructVisitor
+visitFunCallExpr	src/java/sem/LValueVisitor.java	/^    public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:LValueVisitor
+visitFunCallExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:NameAnalysisVisitor
+visitFunCallExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitFunCallExpr(FunCallExpr fc) {$/;"	m	class:TypeCheckVisitor
+visitFunDecl	src/java/ast/ASTPrinter.java	/^    public Void visitFunDecl(FunDecl fd) {$/;"	m	class:ASTPrinter
+visitFunDecl	src/java/ast/ASTVisitor.java	/^    public T visitFunDecl(FunDecl p);$/;"	m	interface:ASTVisitor
+visitFunDecl	src/java/gen/AddrGen.java	/^    public Register visitFunDecl(FunDecl p) {$/;"	m	class:AddrGen
+visitFunDecl	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitFunDecl(FunDecl p) {$/;"	m	class:AllocationLocationVisitor
+visitFunDecl	src/java/gen/ExprGen.java	/^    public Register visitFunDecl(FunDecl p) {$/;"	m	class:ExprGen
+visitFunDecl	src/java/gen/FunGen.java	/^    public Void visitFunDecl(FunDecl p) {$/;"	m	class:FunGen
+visitFunDecl	src/java/gen/ProgramGen.java	/^    public Void visitFunDecl(FunDecl fd) {$/;"	m	class:ProgramGen
+visitFunDecl	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitFunDecl(FunDecl p) {$/;"	m	class:ReturnStructVisitor
+visitFunDecl	src/java/sem/LValueVisitor.java	/^    public Void visitFunDecl(FunDecl p) {$/;"	m	class:LValueVisitor
+visitFunDecl	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitFunDecl(FunDecl funDecl) {$/;"	m	class:NameAnalysisVisitor
+visitFunDecl	src/java/sem/TypeCheckVisitor.java	/^    public Type visitFunDecl(FunDecl funDecl) {$/;"	m	class:TypeCheckVisitor
+visitIf	src/java/ast/ASTPrinter.java	/^    public Void visitIf(If iff) {$/;"	m	class:ASTPrinter
+visitIf	src/java/ast/ASTVisitor.java	/^    public T visitIf(If iff);$/;"	m	interface:ASTVisitor
+visitIf	src/java/gen/AddrGen.java	/^    public Register visitIf(If iff) {$/;"	m	class:AddrGen
+visitIf	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitIf(If iff) {$/;"	m	class:AllocationLocationVisitor
+visitIf	src/java/gen/ExprGen.java	/^    public Register visitIf(If iff) {$/;"	m	class:ExprGen
+visitIf	src/java/gen/FunGen.java	/^    public Void visitIf(If iff) {$/;"	m	class:FunGen
+visitIf	src/java/gen/ProgramGen.java	/^    public Void visitIf(If iff) {$/;"	m	class:ProgramGen
+visitIf	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitIf(If iff) {$/;"	m	class:ReturnStructVisitor
+visitIf	src/java/sem/LValueVisitor.java	/^    public Void visitIf(If iff) {$/;"	m	class:LValueVisitor
+visitIf	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitIf(If iff) {$/;"	m	class:NameAnalysisVisitor
+visitIf	src/java/sem/TypeCheckVisitor.java	/^    public Type visitIf(If iff) {$/;"	m	class:TypeCheckVisitor
+visitInstruction	src/java/gen/asm/AssemblyItemVisitor.java	/^    public T visitInstruction(AssemblyItem.Instruction instruction);$/;"	m	interface:AssemblyItemVisitor
+visitIntLiteral	src/java/ast/ASTPrinter.java	/^    public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:ASTPrinter
+visitIntLiteral	src/java/ast/ASTVisitor.java	/^    public T visitIntLiteral(IntLiteral il);$/;"	m	interface:ASTVisitor
+visitIntLiteral	src/java/gen/AddrGen.java	/^    public Register visitIntLiteral(IntLiteral il) {$/;"	m	class:AddrGen
+visitIntLiteral	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:AllocationLocationVisitor
+visitIntLiteral	src/java/gen/ExprGen.java	/^    public Register visitIntLiteral(IntLiteral il) {$/;"	m	class:ExprGen
+visitIntLiteral	src/java/gen/FunGen.java	/^    public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:FunGen
+visitIntLiteral	src/java/gen/ProgramGen.java	/^    public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:ProgramGen
+visitIntLiteral	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitIntLiteral(IntLiteral il) {$/;"	m	class:ReturnStructVisitor
+visitIntLiteral	src/java/sem/LValueVisitor.java	/^    public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:LValueVisitor
+visitIntLiteral	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitIntLiteral(IntLiteral il) {$/;"	m	class:NameAnalysisVisitor
+visitIntLiteral	src/java/sem/TypeCheckVisitor.java	/^    public Type visitIntLiteral(IntLiteral il) {$/;"	m	class:TypeCheckVisitor
+visitLabel	src/java/gen/asm/AssemblyItemVisitor.java	/^    public T visitLabel(AssemblyItem.Label label);$/;"	m	interface:AssemblyItemVisitor
+visitNode	src/java/gen/BaseCFGNodeVisitor.java	/^    public T visitNode(CFGNode node) {$/;"	m	class:BaseCFGNodeVisitor
+visitNode	src/java/gen/InterferenceGraph.java	/^        private T visitNode(Node node) {$/;"	m	class:InterferenceGraph.BaseInfGraphVisitor	file:
+visitPointerType	src/java/ast/ASTPrinter.java	/^    public Void visitPointerType(PointerType pt) {$/;"	m	class:ASTPrinter
+visitPointerType	src/java/ast/ASTVisitor.java	/^    public T visitPointerType(PointerType pt);$/;"	m	interface:ASTVisitor
+visitPointerType	src/java/gen/AddrGen.java	/^    public Register visitPointerType(PointerType pt) {$/;"	m	class:AddrGen
+visitPointerType	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitPointerType(PointerType pt) {$/;"	m	class:AllocationLocationVisitor
+visitPointerType	src/java/gen/ExprGen.java	/^    public Register visitPointerType(PointerType pt) {$/;"	m	class:ExprGen
+visitPointerType	src/java/gen/FunGen.java	/^    public Void visitPointerType(PointerType pt) {$/;"	m	class:FunGen
+visitPointerType	src/java/gen/ProgramGen.java	/^    public Void visitPointerType(PointerType pt) {$/;"	m	class:ProgramGen
+visitPointerType	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitPointerType(PointerType pt) {$/;"	m	class:ReturnStructVisitor
+visitPointerType	src/java/sem/LValueVisitor.java	/^    public Void visitPointerType(PointerType pt) {$/;"	m	class:LValueVisitor
+visitPointerType	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitPointerType(PointerType pt) {$/;"	m	class:NameAnalysisVisitor
+visitPointerType	src/java/sem/TypeCheckVisitor.java	/^    public Type visitPointerType(PointerType pt) {$/;"	m	class:TypeCheckVisitor
+visitProgram	src/java/ast/ASTPrinter.java	/^    public Void visitProgram(Program p) {$/;"	m	class:ASTPrinter
+visitProgram	src/java/ast/ASTVisitor.java	/^    public T visitProgram(Program p);$/;"	m	interface:ASTVisitor
+visitProgram	src/java/gen/AddrGen.java	/^    public Register visitProgram(Program p) {$/;"	m	class:AddrGen
+visitProgram	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitProgram(Program p) {$/;"	m	class:AllocationLocationVisitor
+visitProgram	src/java/gen/ExprGen.java	/^    public Register visitProgram(Program p) {$/;"	m	class:ExprGen
+visitProgram	src/java/gen/FunGen.java	/^    public Void visitProgram(Program p) {$/;"	m	class:FunGen
+visitProgram	src/java/gen/ProgramGen.java	/^    public Void visitProgram(Program p) {$/;"	m	class:ProgramGen
+visitProgram	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitProgram(Program p) {$/;"	m	class:ReturnStructVisitor
+visitProgram	src/java/sem/LValueVisitor.java	/^    public Void visitProgram(Program p) {$/;"	m	class:LValueVisitor
+visitProgram	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitProgram(Program p) {$/;"	m	class:NameAnalysisVisitor
+visitProgram	src/java/sem/TypeCheckVisitor.java	/^    public Type visitProgram(Program p) {$/;"	m	class:TypeCheckVisitor
+visitReturn	src/java/ast/ASTPrinter.java	/^    public Void visitReturn(Return re) {$/;"	m	class:ASTPrinter
+visitReturn	src/java/ast/ASTVisitor.java	/^    public T visitReturn(Return re);$/;"	m	interface:ASTVisitor
+visitReturn	src/java/gen/AddrGen.java	/^    public Register visitReturn(Return re) {$/;"	m	class:AddrGen
+visitReturn	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitReturn(Return re) {$/;"	m	class:AllocationLocationVisitor
+visitReturn	src/java/gen/ExprGen.java	/^    public Register visitReturn(Return re) {$/;"	m	class:ExprGen
+visitReturn	src/java/gen/FunGen.java	/^    public Void visitReturn(Return re) {$/;"	m	class:FunGen
+visitReturn	src/java/gen/ProgramGen.java	/^    public Void visitReturn(Return re) {$/;"	m	class:ProgramGen
+visitReturn	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitReturn(Return re) {$/;"	m	class:ReturnStructVisitor
+visitReturn	src/java/sem/LValueVisitor.java	/^    public Void visitReturn(Return re) {$/;"	m	class:LValueVisitor
+visitReturn	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitReturn(Return re) {$/;"	m	class:NameAnalysisVisitor
+visitReturn	src/java/sem/TypeCheckVisitor.java	/^    public Type visitReturn(Return re) {$/;"	m	class:TypeCheckVisitor
+visitSizeOfExpr	src/java/ast/ASTPrinter.java	/^    public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:ASTPrinter
+visitSizeOfExpr	src/java/ast/ASTVisitor.java	/^    public T visitSizeOfExpr(SizeOfExpr so);$/;"	m	interface:ASTVisitor
+visitSizeOfExpr	src/java/gen/AddrGen.java	/^    public Register visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:AddrGen
+visitSizeOfExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:AllocationLocationVisitor
+visitSizeOfExpr	src/java/gen/ExprGen.java	/^    public Register visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:ExprGen
+visitSizeOfExpr	src/java/gen/FunGen.java	/^    public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:FunGen
+visitSizeOfExpr	src/java/gen/ProgramGen.java	/^    public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:ProgramGen
+visitSizeOfExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:ReturnStructVisitor
+visitSizeOfExpr	src/java/sem/LValueVisitor.java	/^    public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:LValueVisitor
+visitSizeOfExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:NameAnalysisVisitor
+visitSizeOfExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitSizeOfExpr(SizeOfExpr so) {$/;"	m	class:TypeCheckVisitor
+visitStrLiteral	src/java/ast/ASTPrinter.java	/^    public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:ASTPrinter
+visitStrLiteral	src/java/ast/ASTVisitor.java	/^    public T visitStrLiteral(StrLiteral sl);$/;"	m	interface:ASTVisitor
+visitStrLiteral	src/java/gen/AddrGen.java	/^    public Register visitStrLiteral(StrLiteral sl) {$/;"	m	class:AddrGen
+visitStrLiteral	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:AllocationLocationVisitor
+visitStrLiteral	src/java/gen/ExprGen.java	/^    public Register visitStrLiteral(StrLiteral sl) {$/;"	m	class:ExprGen
+visitStrLiteral	src/java/gen/FunGen.java	/^    public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:FunGen
+visitStrLiteral	src/java/gen/ProgramGen.java	/^    public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:ProgramGen
+visitStrLiteral	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitStrLiteral(StrLiteral sl) {$/;"	m	class:ReturnStructVisitor
+visitStrLiteral	src/java/sem/LValueVisitor.java	/^    public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:LValueVisitor
+visitStrLiteral	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitStrLiteral(StrLiteral sl) {$/;"	m	class:NameAnalysisVisitor
+visitStrLiteral	src/java/sem/TypeCheckVisitor.java	/^    public Type visitStrLiteral(StrLiteral sl) {$/;"	m	class:TypeCheckVisitor
+visitStructType	src/java/ast/ASTPrinter.java	/^    public Void visitStructType(StructType st) {$/;"	m	class:ASTPrinter
+visitStructType	src/java/ast/ASTVisitor.java	/^    public T visitStructType(StructType st);$/;"	m	interface:ASTVisitor
+visitStructType	src/java/gen/AddrGen.java	/^    public Register visitStructType(StructType st) {$/;"	m	class:AddrGen
+visitStructType	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitStructType(StructType st) {$/;"	m	class:AllocationLocationVisitor
+visitStructType	src/java/gen/ExprGen.java	/^    public Register visitStructType(StructType st) {$/;"	m	class:ExprGen
+visitStructType	src/java/gen/FunGen.java	/^    public Void visitStructType(StructType st) {$/;"	m	class:FunGen
+visitStructType	src/java/gen/ProgramGen.java	/^    public Void visitStructType(StructType st) {$/;"	m	class:ProgramGen
+visitStructType	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitStructType(StructType st) {$/;"	m	class:ReturnStructVisitor
+visitStructType	src/java/sem/LValueVisitor.java	/^    public Void visitStructType(StructType st) {$/;"	m	class:LValueVisitor
+visitStructType	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitStructType(StructType st) {$/;"	m	class:NameAnalysisVisitor
+visitStructType	src/java/sem/TypeCheckVisitor.java	/^    public Type visitStructType(StructType st) {$/;"	m	class:TypeCheckVisitor
+visitStructTypeDecl	src/java/ast/ASTPrinter.java	/^    public Void visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:ASTPrinter
+visitStructTypeDecl	src/java/ast/ASTVisitor.java	/^    public T visitStructTypeDecl(StructTypeDecl st);$/;"	m	interface:ASTVisitor
+visitStructTypeDecl	src/java/gen/AddrGen.java	/^    public Register visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:AddrGen
+visitStructTypeDecl	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:AllocationLocationVisitor
+visitStructTypeDecl	src/java/gen/ExprGen.java	/^    public Register visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:ExprGen
+visitStructTypeDecl	src/java/gen/FunGen.java	/^    public Void visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:FunGen
+visitStructTypeDecl	src/java/gen/ProgramGen.java	/^    public Void visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:ProgramGen
+visitStructTypeDecl	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:ReturnStructVisitor
+visitStructTypeDecl	src/java/sem/LValueVisitor.java	/^    public Void visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:LValueVisitor
+visitStructTypeDecl	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitStructTypeDecl(StructTypeDecl sts) {$/;"	m	class:NameAnalysisVisitor
+visitStructTypeDecl	src/java/sem/TypeCheckVisitor.java	/^    public Type visitStructTypeDecl(StructTypeDecl st) {$/;"	m	class:TypeCheckVisitor
+visitTypecaseExpr	src/java/ast/ASTPrinter.java	/^    public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:ASTPrinter
+visitTypecaseExpr	src/java/ast/ASTVisitor.java	/^    public T visitTypecaseExpr(TypecastExpr tc);$/;"	m	interface:ASTVisitor
+visitTypecaseExpr	src/java/gen/AddrGen.java	/^    public Register visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:AddrGen
+visitTypecaseExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:AllocationLocationVisitor
+visitTypecaseExpr	src/java/gen/ExprGen.java	/^    public Register visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:ExprGen
+visitTypecaseExpr	src/java/gen/FunGen.java	/^    public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:FunGen
+visitTypecaseExpr	src/java/gen/ProgramGen.java	/^    public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:ProgramGen
+visitTypecaseExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:ReturnStructVisitor
+visitTypecaseExpr	src/java/sem/LValueVisitor.java	/^    public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:LValueVisitor
+visitTypecaseExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:NameAnalysisVisitor
+visitTypecaseExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitTypecaseExpr(TypecastExpr tc) {$/;"	m	class:TypeCheckVisitor
+visitValueAtExpr	src/java/ast/ASTPrinter.java	/^    public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:ASTPrinter
+visitValueAtExpr	src/java/ast/ASTVisitor.java	/^    public T visitValueAtExpr(ValueAtExpr va);$/;"	m	interface:ASTVisitor
+visitValueAtExpr	src/java/gen/AddrGen.java	/^    public Register visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:AddrGen
+visitValueAtExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:AllocationLocationVisitor
+visitValueAtExpr	src/java/gen/ExprGen.java	/^    public Register visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:ExprGen
+visitValueAtExpr	src/java/gen/FunGen.java	/^    public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:FunGen
+visitValueAtExpr	src/java/gen/ProgramGen.java	/^    public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:ProgramGen
+visitValueAtExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:ReturnStructVisitor
+visitValueAtExpr	src/java/sem/LValueVisitor.java	/^    public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:LValueVisitor
+visitValueAtExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:NameAnalysisVisitor
+visitValueAtExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitValueAtExpr(ValueAtExpr va) {$/;"	m	class:TypeCheckVisitor
+visitVarDecl	src/java/ast/ASTPrinter.java	/^    public Void visitVarDecl(VarDecl vd) {$/;"	m	class:ASTPrinter
+visitVarDecl	src/java/ast/ASTVisitor.java	/^    public T visitVarDecl(VarDecl vd);$/;"	m	interface:ASTVisitor
+visitVarDecl	src/java/gen/AddrGen.java	/^    public Register visitVarDecl(VarDecl vd) {$/;"	m	class:AddrGen
+visitVarDecl	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitVarDecl(VarDecl vd) {$/;"	m	class:AllocationLocationVisitor
+visitVarDecl	src/java/gen/ExprGen.java	/^    public Register visitVarDecl(VarDecl vd) {$/;"	m	class:ExprGen
+visitVarDecl	src/java/gen/FunGen.java	/^    public Void visitVarDecl(VarDecl vd) {$/;"	m	class:FunGen
+visitVarDecl	src/java/gen/ProgramGen.java	/^    public Void visitVarDecl(VarDecl vd) {$/;"	m	class:ProgramGen
+visitVarDecl	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitVarDecl(VarDecl vd) {$/;"	m	class:ReturnStructVisitor
+visitVarDecl	src/java/sem/LValueVisitor.java	/^    public Void visitVarDecl(VarDecl vd) {$/;"	m	class:LValueVisitor
+visitVarDecl	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitVarDecl(VarDecl vd) {$/;"	m	class:NameAnalysisVisitor
+visitVarDecl	src/java/sem/TypeCheckVisitor.java	/^    public Type visitVarDecl(VarDecl vd) {$/;"	m	class:TypeCheckVisitor
+visitVarExpr	src/java/ast/ASTPrinter.java	/^    public Void visitVarExpr(VarExpr v) {$/;"	m	class:ASTPrinter
+visitVarExpr	src/java/ast/ASTVisitor.java	/^    public T visitVarExpr(VarExpr v);$/;"	m	interface:ASTVisitor
+visitVarExpr	src/java/gen/AddrGen.java	/^    public Register visitVarExpr(VarExpr v) {$/;"	m	class:AddrGen
+visitVarExpr	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitVarExpr(VarExpr v) {$/;"	m	class:AllocationLocationVisitor
+visitVarExpr	src/java/gen/ExprGen.java	/^    public Register visitVarExpr(VarExpr v) {$/;"	m	class:ExprGen
+visitVarExpr	src/java/gen/FunGen.java	/^    public Void visitVarExpr(VarExpr v) {$/;"	m	class:FunGen
+visitVarExpr	src/java/gen/ProgramGen.java	/^    public Void visitVarExpr(VarExpr v) {$/;"	m	class:ProgramGen
+visitVarExpr	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitVarExpr(VarExpr v) {$/;"	m	class:ReturnStructVisitor
+visitVarExpr	src/java/sem/LValueVisitor.java	/^    public Void visitVarExpr(VarExpr v) {$/;"	m	class:LValueVisitor
+visitVarExpr	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitVarExpr(VarExpr v) {$/;"	m	class:NameAnalysisVisitor
+visitVarExpr	src/java/sem/TypeCheckVisitor.java	/^    public Type visitVarExpr(VarExpr v) {$/;"	m	class:TypeCheckVisitor
+visitWhile	src/java/ast/ASTPrinter.java	/^    public Void visitWhile(While wh) {$/;"	m	class:ASTPrinter
+visitWhile	src/java/ast/ASTVisitor.java	/^    public T visitWhile(While wh);$/;"	m	interface:ASTVisitor
+visitWhile	src/java/gen/AddrGen.java	/^    public Register visitWhile(While wh) {$/;"	m	class:AddrGen
+visitWhile	src/java/gen/AllocationLocationVisitor.java	/^    public Void visitWhile(While wh) {$/;"	m	class:AllocationLocationVisitor
+visitWhile	src/java/gen/ExprGen.java	/^    public Register visitWhile(While wh) {$/;"	m	class:ExprGen
+visitWhile	src/java/gen/FunGen.java	/^    public Void visitWhile(While wh) {$/;"	m	class:FunGen
+visitWhile	src/java/gen/ProgramGen.java	/^    public Void visitWhile(While wh) {$/;"	m	class:ProgramGen
+visitWhile	src/java/gen/ReturnStructVisitor.java	/^    public Expr visitWhile(While wh) {$/;"	m	class:ReturnStructVisitor
+visitWhile	src/java/sem/LValueVisitor.java	/^    public Void visitWhile(While wh) {$/;"	m	class:LValueVisitor
+visitWhile	src/java/sem/NameAnalysisVisitor.java	/^	public Void visitWhile(While wh) {$/;"	m	class:NameAnalysisVisitor
+visitWhile	src/java/sem/TypeCheckVisitor.java	/^    public Type visitWhile(While wh) {$/;"	m	class:TypeCheckVisitor
+visited	src/java/gen/BaseCFGNodeVisitor.java	/^    public Set<CFGNode> visited = new HashSet();$/;"	f	class:BaseCFGNodeVisitor
+visited	src/java/gen/InterferenceGraph.java	/^        public Set<CFGNode> visited = new HashSet();$/;"	f	class:InterferenceGraph.BaseInfGraphVisitor
+vreg	src/java/gen/InterferenceGraph.java	/^        private Register vreg;$/;"	f	class:InterferenceGraph.Node	file:
+won	tests/tictactoe-copy.c	/^int won(char mark) {$/;"	f
+won	tests/tictactoe.c	/^int won(char mark)$/;"	f
+writeTo	src/java/util/ToFile.java	/^    public static void writeTo(String path, String content) {$/;"	m	class:ToFile
+writer	src/java/ast/ASTPrinter.java	/^    private PrintWriter writer;$/;"	f	class:ASTPrinter	file:
+x	tests/shadow.c	/^int x;$/;"	v
+zero	src/java/gen/asm/Register.java	/^        public static final Arch zero = new Arch(0, "zero");$/;"	f	class:Register.Arch
